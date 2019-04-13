@@ -6,11 +6,24 @@
 Welcome to OSSEC HIDS's documentation!
 ======================================
 
+OSSEC is an open source host based intrustion detection system.
+It performs log monitoring, file integrity monitoring, Windows registry monitoring, 
+rootkit detection, real-time alerting, and active-response. It runs on Microsoft 
+Windows, and most modern Unix-like systems including Linux, FreeBSD, OpenBSD, and 
+Solaris.
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
+   about/index
+   installation/index
+   loganalysis/index
+   syscheck/index
+   rootcheck/index
+   output/index
+   ativeresponse/index
 
 Indices and tables
 ==================
