@@ -23,7 +23,7 @@ Solaris.
    syscheck/index
    rootcheck/index
    output/index
-   ativeresponse/index
+   activeresponse/index
 
 Indices and tables
 ==================
