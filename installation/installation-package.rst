@@ -7,8 +7,8 @@ Package Installation
 The OSSEC project has made RPM and deb packages available.
 Links to the packages can be found on the OSSEC `download page <http://www.ossec.net/?page_id=19>`_
 
-RPM Installation
-----------------
+RPM Installation:
+^^^^^^^^^^^^^^^^^
 
 OSSEC's RPMs are made available by `AtomiCorp <http://www.atomicorp.com>`_.
 
@@ -31,28 +31,22 @@ And for an agent run:
    # yum install ossec-hids ossec-hids-agent
 
 
-Deb Installation
-----------------
+Deb Installation:
+^^^^^^^^^^^^^^^^^
 
-OSSEC's deb packages are available in the Wazuh repository.
+Atomicorp provides `.deb` installation packages as well.
 
 Install the apt-get repository key:
 
 .. code-block:: console
     
-    # apt-key adv --fetch-keys http://ossec.wazuh.com/repos/apt/conf/ossec-key.gpg.key
+    # wget -q -O - https://www.atomicorp.com/RPM-GPG-KEY.atomicorp.txt  | sudo apt-key add -
 
-Add the repository for Debian (available distributions are Sid, Jessie and Wheezy):
-
-.. code-block:: console
-
-    # echo 'deb http://ossec.wazuh.com/repos/apt/debian wheezy main' >> /etc/apt/sources.list
-
-Or add the repository for Ubuntu (available distributions are Precise, Trusty and Utopic):
+Add the repository for Debian and Ubuntu:
 
 .. code-block:: console
 
-    # echo 'deb http://ossec.wazuh.com/repos/apt/ubuntu precise main' >> /etc/apt/sources.list
+    # wget -q -O - https://updates.atomicorp.com/installers/atomic | sudo bash
 
 Update the repository:
  
@@ -64,13 +58,11 @@ Install OSSEC HIDS server/manager:
 
 .. code-block:: console
 
-    # apt-get install ossec-hids
+    # apt-get install ossec-hids-server
 
 Or install OSSEC HIDS agent:
 
 .. code-block:: console
 
     # apt-get install ossec-hids-agent
-
-
 
