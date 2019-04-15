@@ -1,7 +1,7 @@
 .. _management:
 
-Management
-==========
+Manager Configuration
+=====================
 
 
 .. toctree::
