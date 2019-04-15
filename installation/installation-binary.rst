@@ -47,8 +47,8 @@ Finally create an OSSEC package.
 
 .. _manual-install-binary-install: 
 
-Installation of the binary OSSEC package 
-----------------------------------------
+Installation of the binary OSSEC package:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 On the target system (that does not have a C compiler) download your ossec-binary.tar 
 created in the steps above. 
