@@ -1,7 +1,7 @@
 .. _installation_install-source:
 
-Introduction:
-^^^^^^^^^^^^^
+Install from source:
+====================
 
 For source installations the `install.sh` script will ask questions about the installation,
 compile, and install the necessary files and users.
@@ -34,8 +34,8 @@ Manager/Agent Installation
         $ sudo /var/ossec/bin/ossec-control start  
 
 
-Manual Installation
-===================
+Manual Installation:
+^^^^^^^^^^^^^^^^^^^^
 
 OSSEC can also be installed in a more manual fashion without the use of `install.sh`.
 This installation method requires manual configuration of the `ossec.conf` file.
