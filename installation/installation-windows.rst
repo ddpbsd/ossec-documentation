@@ -10,7 +10,7 @@ Windows Agent Installation
    will require an OSSEC server to function.
 
 Step 1: Opening the Agent Manager menu
--------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The first step of this process is to get into the Agent Manager menu. From the ossec server, type the following command::
 
@@ -72,9 +72,6 @@ Step 4: The Windows Side
 
 Next up, download the executable named Agent Windows from https://ossec.github.io/downloads.html. Run through the install wizard with all defaults. It should launch the Ossec Agent Manager when it's done. The Ossec Agent Manager looks like this: 
 
-.. |image0| image:: https://github.com/Vendetta547/ossec-docs/blob/patch-1/OSSEC-Agent-Manager-Windows.png
-
-|image0|
 
 Enter the IP address of your ossec server in the first text field, and enter the extracted key that was copied to the clipboard earlier to the second textfield. Finally, click on the manage tab and hit restart. 
 
