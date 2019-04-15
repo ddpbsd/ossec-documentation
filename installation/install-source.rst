@@ -15,8 +15,6 @@ Manager/Agent Installation
 
 1. Download the latest version and verify its checksum.
 
-.. include:: getossec.trst
-
 2. Extract the compressed OSSEC tarball. and run the ``install.sh`` script. It will guide you 
    through the installation and compile the source (not shown).
 
