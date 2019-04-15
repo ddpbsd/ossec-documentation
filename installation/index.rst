@@ -11,5 +11,6 @@ Installation
    build-options
    installation-source
    installation-package
+   installation-binary
    compile-ossec-mingw
 

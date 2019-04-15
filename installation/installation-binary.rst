@@ -33,7 +33,7 @@ The ``make`` commands should compile the correct binaries.
     $ cd ossec-hids-*/src
     $ make TARGET=agent
 
-Modify ossec-hids-*/etc/preloaded-vars.conf to set BINARY_INSTALL to yes. 
+Modify `ossec-hids-*/etc/preloaded-vars.conf` to set `BINARY_INSTALL` to yes. 
 
 .. code-block:: console 
 

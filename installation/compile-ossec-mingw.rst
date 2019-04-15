@@ -13,6 +13,7 @@ Requirements:
 * OpenSSL (optional)
 
 .. versionadded:: 3.3
+
 * PCRE2 source tree in `src/external`
 
 Compiling OSSEC 3.x with MinGW:
