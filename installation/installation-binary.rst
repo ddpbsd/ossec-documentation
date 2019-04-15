@@ -1,16 +1,16 @@
-.. _manual-install-binary:
+.. _installation_installation-binary:
 
 Compiling OSSEC for a Binary Installation 
 =========================================
 
-OSSEC is typically compiled on each system it is installed on, but this may not always be easy. 
-To help in these cases there are a few methods of binary installation available. OSSEC can be 
-compiled on one system, and copied to the destination systems. This installation method still 
-requires GNU make on the target system.
+.. warning::
 
-There are also RPM and deb packages available for some systems.
+   This installation method should be revisited, it may not work.
 
-
+In the past OSSEC was often compiled on each system it was installed on. This is not the only 
+method of installation however. OSSEC can be compiled on one system and copied to a destination
+system. This method of installation still requires GNU make on the target system, but not the 
+compilers or development packages.
 
 .. note:: 
 
@@ -19,39 +19,31 @@ There are also RPM and deb packages available for some systems.
 
 .. _manual-install-binary-build: 
 
-Compiling OSSEC for install on a second server 
-----------------------------------------------
+Compiling OSSEC for install on a second server:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 First download the OSSEC package corresponding to the version you want to 
-install and unpack it (on the system with a compiler).
+install and extract it on the build system.
 
-.. code-block:: console 
-
-    # wget -U ossec http://www.ossec.net/files/ossec-hids-2.8.1.tar.gz
-    # tar -zxvf ossec-hids-latest.tar.gz 
-
-    
 Enter in the source directory of the downloaded package, and configure OSSEC to build the ``agent`` version.
 The ``make`` commands should compile the correct binaries.
 
 .. code-block:: console 
 
-    # cd ossec-*/src
-    # make setagent
-    # make all
-    # make build
+    $ cd ossec-hids-*/src
+    $ make TARGET=agent
 
 Modify ossec-hids-*/etc/preloaded-vars.conf to set BINARY_INSTALL to yes. 
 
 .. code-block:: console 
 
-    # echo "USER_BINARYINSTALL=\"y\"" >> ossec-hids*/etc/preloaded-vars.conf
+    $ echo "USER_BINARYINSTALL=\"y\"" >> ossec-hids*/etc/preloaded-vars.conf
 
 Finally create an OSSEC package.
 
 .. code-block:: console 
 
-    # tar -cvf ossec-binary.tar ossec-hids*
+    $ tar -cvf ossec-binary.tar ossec-hids*
 
 .. _manual-install-binary-install: 
 
@@ -61,20 +53,13 @@ Installation of the binary OSSEC package
 On the target system (that does not have a C compiler) download your ossec-binary.tar 
 created in the steps above. 
 
-Complete the installation by unarchiving the binary package and running ./install.sh. 
+Complete the installation by unarchiving the binary package and running `sudo ./install.sh`. 
 
 .. code-block:: console 
 
-    # tar xfv ossec-binary.tar
-    # cd ossec-* 
-    # ./install.sh 
+    $ tar xfv ossec-binary.tar
+    $ cd ossec-* 
+    $ sudo ./install.sh 
 
 After following the installation prompts the install will be complete.  
 
-
-
-.. Installing the OSSEC RPM
-.. ------------------------
-
-.. Installing the OSSEC deb
-.. ------------------------
