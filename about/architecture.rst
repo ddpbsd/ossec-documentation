@@ -3,31 +3,42 @@
 OSSEC Architecture
 ==================
 
+OSSEC is comprised of multiplepieces that work together. In an agent/server configuration the central manager is responsible
+for receiving information from agents, syslog devices, and from agentless devices.
+
+In a stand-alone environment a system mostly monitors itself, performing all of the functions of both the agent and server.
+
+
 Internal Architecture:
 ^^^^^^^^^^^^^^^^^^^^^^
 
 On Microsoft Windows systems, OSSEC runs as a single service. On unix-like systems it runs as several
 processes, communicating via sockets.
 
-`ossec-analysisd` (on OSSEC servers) or `ossec-agentd` (on OSSEC agents) will create a socket in
-`/var/ossec/queue/ossec` for communication between the daemons.
+On an agent `ossec-agentd` communicated with the manager. It passes along messages from `ossec-syscheckd` and
+`ossec-logcollector`.
 
+On the OSSEC manager the `ossec-remoted` process is responsible for communicating with the agents, and passing the information
+to `ossec-analysisd`. `ossec-analysisd` receives log messages and decodes them. It then compares the messages to a set of rules
+and will iniate alerting when necessary.
 
-
-
+Daemons like `ossec-maild` and `ossec-csyslogd` can read the alert log file and forward the alerts.
 
 .. Insert picture of data flow through OSSEC
 
 
-Agent/Server Architecture:
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Agentless and Network Devices:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+OSSEC has the ability to communicate with systems that cannot have the agent software installed. This is typically done through
+SSH, and a few pre-made `Expect <https://core.tcl.tk/expect/index>`_ scripts are provided for a number of systems.
+
+In addition to the agentless support, OSSEC can receive syslog messages from any number of devices and process them as if the
+messages were delivered via an agent.
 
 
-
-
-
-
-
+Process List:
+^^^^^^^^^^^^^
 
 +--------------------+--------------------------------------------------------------------------------+---------------------+
 | Process            | Description                                                                    | Install Type        |
@@ -50,7 +61,7 @@ Agent/Server Architecture:
 | ossec-syscheckd    | Does integrity checking and rootkit detection (rootcheck is a module of it).   | All                 |
 +--------------------+--------------------------------------------------------------------------------+---------------------+
 | ossec-csyslogd     | Client syslog tool to forward OSSEC alerts to remote syslog servers            | Server/Stand-alone  |
-|                    | (including SIM/SEMs and log management systems).                               |                     |
+|                    | (including SIEM and log management systems).                                   |                     |
 +--------------------+--------------------------------------------------------------------------------+---------------------+
 | ossec-monitord     | Monitor agent connectivity and compress daily log files.                       | Server/Stand-alone  |
 +--------------------+--------------------------------------------------------------------------------+---------------------+
