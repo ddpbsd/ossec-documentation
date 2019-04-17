@@ -43,7 +43,7 @@ Process List:
 +--------------------+--------------------------------------------------------------------------------+---------------------+
 | Process            | Description                                                                    | Install Type        |
 +====================+================================================================================+=====================+
-| ossec-analysisd    | Master program. Analyzes data from the logs, syscheck,rootcheck, etc.          | Server/Stand-alone  |
+| ossec-analysisd    | Master program. Analyzes data from the logs, syscheck, rootcheck, etc.         | Server/Stand-alone  |
 |                    | Runs as an unprivileged (ossec) user under chroot.                             |                     | 
 +--------------------+--------------------------------------------------------------------------------+---------------------+
 | ossec-execd        | Execute active responses by calling the configured scripts. Runs as root.      | All                 |
