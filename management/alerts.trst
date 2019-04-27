@@ -1,0 +1,43 @@
+.. _management_alerts:
+
+.. _alerts_email_alert_level:
+
+email_alert_level:
+^^^^^^^^^^^^^^^^^^
+
+   Minimum alert level for email notification.
+
+   **Default:** 7
+
+   **Allowed:** Any level from 1-16
+
+   .. note::
+
+      This is the minimm level for an alert to trigger an email.
+      This will over ride granular email alert levels.
+      Individual rules can over ride this with the `alert_by_email` option.
+
+.. _alerts_log_alert_level:
+
+log_alert_level:
+^^^^^^^^^^^^^^^^
+
+   Minimum alert level to record an alert in `alerts.log`.
+
+   **Default:** 1
+
+   **Allowed:** Any level from 1-16
+
+.. _alerts_use_geoip:
+
+use_geoip:
+^^^^^^^^^^
+
+   Enable or disable GeoIP lookups.
+
+   **Default:** no
+
+   **Allowed:** yes/no
+
+
+

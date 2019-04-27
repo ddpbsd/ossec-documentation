@@ -269,7 +269,7 @@ geoip6_db_path:
 
       <geoip6_db_path>/etc/GeoListeCity.dat</geoip6_db_path>
 
-.. _global_md5_whitelist
+.. _global_md5_whitelist:
 
 md5_whitelist:
 ^^^^^^^^^^^^^^

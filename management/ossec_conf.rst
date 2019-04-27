@@ -15,6 +15,14 @@ The `<global>` section is valid on Server and Local installations only.
 .. include:: global.trst
 
 
+alerts:
+-------
+
+Settings related to alert logging and notifications.
+
+The `<alerts>` section is valid on Server and Local installations only.
+
+.. include:: alerts.trst
 
 
 
