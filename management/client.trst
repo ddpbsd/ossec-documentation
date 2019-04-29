@@ -1,0 +1,62 @@
+.. _management_client:
+
+.. _client_server-ip:
+
+server-ip:
+^^^^^^^^^^
+
+   Specify the IP address of the OSSEC management server.
+
+   **Allowed:** Any valid IP address
+
+.. _client_server-hostname:
+
+server-hostname:
+^^^^^^^^^^^^^^^^
+
+   Specify the hostname of the OSSEC management server.
+
+   **Allowed:** Any valid hostname
+
+.. _client_port:
+
+port:
+^^^^^
+
+   Specifies the UDP port used by the OSSEC management server.
+
+   **Default:** 1514
+
+   **Allowed:** Any port number
+
+.. _client_config-profile:
+
+config-profile:
+^^^^^^^^^^^^^^^
+
+   Specifies the profile to be used by the agent.
+   The profiles are defined in the `agent.conf` on the OSSEC management server.
+   Multiple profiles can be specified, separated by a comma and a space.
+
+   **Allowed:** Valid profile name
+
+.. _client_notify_time:
+
+notify_time:
+^^^^^^^^^^^^
+
+   
+
+.. _client_time-reconnect:
+
+time-reconnect:
+^^^^^^^^^^^^^^^
+
+
+
+
+
+
+
+
+
