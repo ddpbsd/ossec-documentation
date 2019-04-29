@@ -23,9 +23,9 @@ server-hostname:
 port:
 ^^^^^
 
-   Specifies the UDP port used by the OSSEC management server.
+   Specifies the port used by the OSSEC management server.
 
-   **Default:** 1514
+   **Default:** 1514/udp
 
    **Allowed:** Any port number
 
