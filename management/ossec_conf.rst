@@ -17,8 +17,17 @@ The `<global>` section is valid on Server and Local installations only.
 client:
 -------
 
+Settings defining how an OSSEC agent interacts with the OSSEC management server.
+The `<client>` section is valid on Agents only.
+
+.. include:: client.trst
+
 remote:
 -------
+
+Settings defining the configuration of `ossec-remoted` on the OSSEC management server.
+
+.. include:: remote.trst
 
 syscheck:
 ---------

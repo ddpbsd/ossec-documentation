@@ -1,0 +1,92 @@
+.. _management_remote:
+
+.. _remote_connection:
+
+connection:
+^^^^^^^^^^^
+
+   Specifies the type of connection `ossec-remoted` will accept.
+   Two types of connections are accepted:
+
+      - secure Messages from agents are encrypted and authenticated. Uses UDP.
+
+      - syslog Messages from devices are not encrypted or authenticated. Can use UDP or TCP
+
+   **Default:** secure
+
+   **Allowed:** secure or syslog
+
+.. _remote_port:
+
+port:
+^^^^^
+
+   The port utilized by `ossec-remoted`.
+
+   **Default:** 1514 for secure, 514 for syslog
+
+   **Allowed:** Any port number
+
+.. _remote_protocol:
+
+protocol:
+^^^^^^^^^
+
+   The protocol used by `ossec-remoted` for syslog messages.
+
+   **Default:** udp
+
+   **Allowed:** udp or tcp
+
+.. _remote_allowed-ips:
+
+allowed-ips:
+^^^^^^^^^^^^
+
+   A list of IP addresses that are permitted to send syslog messages to `ossec-remoted`.
+   Specify one IP address per instance of `allowed-ips`.
+   Multiple instances are permitted.
+
+   **Allowed:** Any IP address or network
+
+   .. note::
+
+      If using the syslog connection type, at least one IP address must be specified.
+
+.. _remote_deny-ips:
+
+deny-ips:
+^^^^^^^^^
+
+   A list of IP addresses that are not permitted to send syslog messages to `ossec-remoted`.
+   Specify one IP address per instance of `deny-ips`.
+   Multiple instances are permitted.
+
+   *Allowed:** Any IP address or network
+
+.. _remote_local_ip:
+
+local_ip:
+^^^^^^^^^
+
+   The local IP address `ossec-remoted` will listen on.
+
+   **Default:** All interfaces
+
+   **Allowed:** Any local IP address
+
+.. _remote_ipv6:
+
+ipv6:
+^^^^^
+
+   The local IPv6 address `ossec-remoted` will listen on.
+
+   **Default:** None
+
+   **Allowed:** Any local IPv6 address
+
+
+
+
+
