@@ -45,6 +45,11 @@ config-profile:
 notify_time:
 ^^^^^^^^^^^^
 
+   Specifies the time in seconds between messages sent to the OSSEC management server.
+
+   .. note::
+
+      XXX More details needed.
    
 
 .. _client_time-reconnect:
@@ -52,11 +57,10 @@ notify_time:
 time-reconnect:
 ^^^^^^^^^^^^^^^
 
+   Time in seconds until a reconnection attempt is made.
+   This should be set to a number greater than `notify_time`.
 
+   .. note::
 
-
-
-
-
-
+      XXX More details needed.
 
