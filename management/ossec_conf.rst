@@ -32,10 +32,17 @@ Settings defining the configuration of `ossec-remoted` on the OSSEC management s
 syscheck:
 ---------
 
+Settings controlling the file integrity monitoring features in OSSEC.
+Most settings should be configured on the system they apply to, but
+settings that are only valid on the management server or local installs
+have been marked as such.
+
 .. include:: syscheck.trst
 
 rootcheck:
 ----------
+
+.. include:: rootcheck.trst
 
 localfile:
 ----------

@@ -1,0 +1,273 @@
+.. _management_rootcheck:
+
+.. _rootcheck_base_directory:
+
+base_directory:
+^^^^^^^^^^^^^^^
+
+   The base path prepended to a number of options.
+   Usually the installation path for OSSEC.
+   It will modify the folling options:
+
+    - rootkit_files
+    - rootkit_trojans
+    - windows_malware
+    - windows_audit
+    - windows_apps
+    - systems_audit
+
+   **Allowed:** Directory path
+
+   **Default:** `/var/ossec`
+
+.. _rootcheck_rootkit_files:
+
+rootkit_files:
+^^^^^^^^^^^^^^
+
+   This option can change the location of the rootkit files database.
+
+   **Default:** `/etc/shared/rootkit_files.txt
+
+   **Allowed:** A file with the rootkit files signatures
+
+.. _rootcheck_rootkit_trojans:
+
+rootkit_trojans:
+^^^^^^^^^^^^^^^^
+
+   This option can change the location of the rootkit trojans database.
+
+   **Default:** `/etc/shared/rootkit_trojans.txt`
+
+   **Allowed:** A file with the trojans signatures
+
+.. _rootcheck_windows_audit:
+
+windows_audit:
+^^^^^^^^^^^^^^
+
+   This option can change the location of the Windows audit database.
+
+   **Default:** `./shared/win_audit_rcl.txt`
+
+   **Allowed:** A file with the Windows audit signatures
+
+.. _rootcheck_system_audit:
+
+system_audit:
+^^^^^^^^^^^^^
+
+   This option can change the location of the system audit databases.
+   One entry per instance of this option.
+   This option can be specified multiple times.
+
+   **Default:** `/etc/shared/system_audit_rcl.txt`, `/etc/shared/cis_debian_linux_rcl.txt`,
+   `/etc/shared/cis_rhel_linux_rcl.txt`, `/etc/shared/cis_rhel5_linux_rcl.txt`
+
+   **Allowed:** A file with system audit signatures
+
+
+.. _rootcheck_windows_apps:
+
+windows_apps:
+^^^^^^^^^^^^^
+
+   This option can change the location of the Windows application audit database.
+
+   **Default:** `./shared/win_applications_rcl.txt`
+
+   **Allowed:** A file with Windows application signatures
+
+.. _rootcheck_windows_malware:
+
+windows_malware:
+^^^^^^^^^^^^^^^^
+
+   This option can change the location of the Windows malware database.
+
+   **Default:** `./shared/win_malware_rcl.txt`
+
+   **Allowed:** A file with Windows malware audit database.
+
+.. _rootcheck_scanall:
+
+scanall:
+^^^^^^^^
+
+   Can force rootcheck to scan the entire system.
+   This may trigger false positives.
+
+   **Default:** no
+
+   **Allowed:** yes/no
+
+   .. note::
+
+      XXX More information needed.
+
+.. _rootcheck_frequency:
+
+frequency:
+^^^^^^^^^^
+
+   Frequency (in seconds) between rootcheck scans.
+
+   **Default:** 36000
+
+   **Allowed:** Time in seconds
+
+.. _rootcheck_disabled:
+
+disabled:
+^^^^^^^^^
+
+   Disable the rootcheck functionality.
+
+   **Default:** no
+
+   **Allowed:** yes/no
+
+.. _rootcheck_check_dev:
+
+check_dev:
+^^^^^^^^^^
+
+   Enable or disable checking for files in `/dev`.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+.. _rootcheck_check_files:
+
+check_files:
+^^^^^^^^^^^^
+
+   Enable or disable checks based on the rootkit files.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+   .. note::
+
+      XXX Need to research.
+
+.. _rootcheck_check_if:
+
+check_if:
+^^^^^^^^^
+
+   Enable or disable checking the network interfaces.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+.. _rootcheck_check_pids:
+
+check_pids:
+^^^^^^^^^^^
+
+   Enable or disable checking process IDs.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+.. _rootcheck_check_ports:
+
+check_ports:
+^^^^^^^^^^^^
+
+   Enable or disable checking network ports.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+.. _rootcheck_check_sys:
+
+check_sys:
+^^^^^^^^^^
+
+   Enable or disable checking the filesystem.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+   .. note::
+
+      XXX More info needed
+
+.. _rootcheck_check_trojans:
+
+check_trojans:
+^^^^^^^^^^^^^^
+
+   Enable or disable checking for trojans.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+.. _rootcheck_check_unixaudit:
+
+check_unixaudit:
+^^^^^^^^^^^^^^^^
+
+   Enable or disable checking for unix issues.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+.. _rootcheck_check_winapps:
+
+check_winapps:
+^^^^^^^^^^^^^^
+
+   Enable or disable checking Windows applications.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+.. _rootcheck_check_winaudit
+
+check_winaudit:
+^^^^^^^^^^^^^^^
+
+   Enable or disable checking Windows audit.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+.. _rootcheck_check_winmalware:
+
+check_winmalware:
+^^^^^^^^^^^^^^^^^
+
+   Enable or disable checking Windows malware.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+.. _rootcheck_skip_nfs:
+
+skip_nfs:
+^^^^^^^^^
+
+   .. versionadded:: 2.9.0
+   If enabled, this options prevents rootcheck from scanning network filesystems.
+   Currently works on Linux, FreeBSD, and OpenBSD (support added in v3.3).
+   If enabled, it will abort checks running on CIFS and NFS mounts.
+
+   **Default:** no
+
+   **Allowed:** yes/no
+
