@@ -81,6 +81,8 @@ The `<alerts>` section is valid on Server and Local installations only.
 email_alerts:
 -------------
 
+.. include:: email_alerts.trst
+
 syslog_output:
 --------------
 
