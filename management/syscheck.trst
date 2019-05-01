@@ -175,7 +175,7 @@ auto_ignore:
 
    **Allowed:** yes/no
 
-   **Valid on:** Server and local installations
+   **Valid on:** Server and Local installations
 
 .. _syscheck_alert_new_files:
 
@@ -189,7 +189,7 @@ alert_new_files:
 
    **Allowed:** yes/no
 
-   **Valid on:** Server and local installations
+   **Valid on:** Server and Local installations
 
    .. note::
 
