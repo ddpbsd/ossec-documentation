@@ -124,23 +124,23 @@ command_alias:
 
    **Example:**
 
-   The following alias:
+      The following alias:
 
-   .. code-block:: xml
+      .. code-block:: xml
 
-      <alias>usb-check</alias>
+         <alias>usb-check</alias>
 
-   would change the output from:
+      would change the output from:
 
-   .. code-block:: console
+      .. code-block:: console
 
-      ossec: output: 'reg QUERY HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR':
+         ossec: output: 'reg QUERY HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR':
 
-   to:
+      to:
 
-   .. code-block:: console
+      .. code-block:: console
 
-      ossec: output: 'usb-check':
+         ossec: output: 'usb-check':
 
    **Allowed:** Any string
 

@@ -225,23 +225,23 @@ zeromq_url:
 
    **Examples:**
 
-   Listen on localhost, tcp port 11111:
+      Listen on localhost, tcp port 11111:
 
-   .. code-block:: xml
+      .. code-block:: xml
 
-      <zeromq_uri>tcp://localhost:11111/</zeromq_uri>
+         <zeromq_uri>tcp://localhost:11111/</zeromq_uri>
 
-   Listen on tcp port 21212 on all IP addresses assigned to eth0:
+      Listen on tcp port 21212 on all IP addresses assigned to eth0:
 
-   .. code-block:: xml
+      .. code-block:: xml
 
-      <zeromq_uri>tcp://eth0:21212/</zeromq_uri>
+         <zeromq_uri>tcp://eth0:21212/</zeromq_uri>
 
-   Listen on the Unix Domain Socket `/alerts-zmq`:
+      Listen on the Unix Domain Socket `/alerts-zmq`:
 
-   .. code-block:: xml
+      .. code-block:: xml
 
-      <zeromq_uri>ipc:///alerts-zmq</zeromq_uri>
+         <zeromq_uri>ipc:///alerts-zmq</zeromq_uri>
 
 .. _global_geoip_db_path:
 
@@ -252,9 +252,9 @@ geoip_db_path:
 
    **Example:**
 
-   .. code-block:: xml
+      .. code-block:: xml
 
-      <geoip_db_path>/etc/GeoListeCity.dat</geoip_db_path>
+         <geoip_db_path>/etc/GeoListeCity.dat</geoip_db_path>
 
 .. _global_geoip6_db_path:
 
@@ -265,9 +265,9 @@ geoip6_db_path:
 
    **Example:**
 
-   .. code-block:: xml
+      .. code-block:: xml
 
-      <geoip6_db_path>/etc/GeoListeCity.dat</geoip6_db_path>
+         <geoip6_db_path>/etc/GeoListeCity.dat</geoip6_db_path>
 
 .. _global_md5_whitelist:
 
@@ -281,13 +281,7 @@ md5_whitelist:
 
    **Example:**
 
-   .. code-block:: xml
+      .. code-block:: xml
 
-      <md5_whitelist>/rules/lists/md5whitelist.db</md5_whitelist>
-
-
-
-
-
-
+         <md5_whitelist>/rules/lists/md5whitelist.db</md5_whitelist>
 

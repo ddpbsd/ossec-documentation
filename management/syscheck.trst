@@ -241,9 +241,9 @@ prefilter_cmd:
 
    **Example:**
 
-   .. code-block:: xml
+      .. code-block:: xml
 
-      <prefilter_cmd>/usr/sbin/prelink -y</prefilter_cmd>
+         <prefilter_cmd>/usr/sbin/prelink -y</prefilter_cmd>
 
    .. note::
 
