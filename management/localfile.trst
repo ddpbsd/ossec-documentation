@@ -174,7 +174,7 @@ query:
    Specify an XPATH query following the event schema in order to filter the events OSSEC will process.
    See `Microsoft's documentation <http://msdn.microsoft.com/en-us/library/windows/desktop/aa385201%28v=vs.85%29.aspx>`_ for more details.
 
-   **Example:***
+   **Example:**
 
       The following configuration will only process events with an ID of 7040:
 
