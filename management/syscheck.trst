@@ -250,6 +250,18 @@ prefilter_cmd:
       This option can negatively impact performance.
       The configured command will be run for each file checked.
 
+.. _syscheck_skip_nfs:
 
+skip_nfs:
+^^^^^^^^^
 
+   .. versionadded:: 2.9.0
+
+   This option will prevent `ossec-syscheckd` from scanning network mounted filesystems.
+   This option is only valid on Linux, FreeBSD, and OpenBSD (added in v3.3) systems.
+   Currently `skip_nfs` will abort checks running on files stored on CIFS and NFS mount points.
+
+   **Default:** no
+
+   **Allowed:** yes/no
 
