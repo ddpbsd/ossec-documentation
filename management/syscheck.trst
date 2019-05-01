@@ -14,13 +14,132 @@ directories:
 
    **Attributes:**
 
+   - **check_all:**
+
+      The directories are monitored for changes in file hash, size, owner, group, and permissions.
+      This can be over ridden by setting each specific option to `no`.
+      The current specific checks are: `check_md5sum`, `check_sha1sum`, `check_size`, `check_owner`,
+      `chek_group`, and `check_perm`.
+
+      **Value:** yes/no
+
+   - **check_sum:**
+
+      Check the md5 and sha1 hashes of the monitored files.
+
+      **Value:** yes
+
+   - **check_sha1sum:**
+
+      Check the sha1 hash.
+
+      **Value:** yes
+
+   - **check_md5sum:**
+
+      Check the md5 hash.
+
+      **Value:** yes
+
+   - **check_size:**
+
+      Check the size.
+
+      **Value:** yes
+
+   - **check_owner:**
+
+      Check the owner.
+
+      **Value:** yes
+
+   - **check_group:**
+
+      Check the group.
+
+      **Value:** yes
+
+   - **check_perm:**
+
+      Check the permissions.
+ 
+      **Value:** yes
+
    - **realtime:**
 
       Enable realtime monitoring of files on Linux and Windows systems.
 
-      **Default:** no
+      **Value:** yes
 
-      **Allowed:** yes/no
+   - **report_changes:**
+
+      Report changes to a file with diffs of the changes made.
+      The diffs could include sensitive information.
+      This option is limited to text files only.
+
+      **Value:** yes
+
+   - **restrict:**
+
+      A string that will limit the checks to files containing the specified string in the file name.
+
+      **Value:** Any directory or file name (but not a path)
+
+   - **no_recurse:**
+
+      ..versionadded:: 3.2
+
+      Do not recurse into the defined directory. `yes` unintuitively disables recursion.
+
+      **Value:** yes
+
+.. _syscheck_ignore:
+
+ignore:
+^^^^^^^
+
+   List of files or directories to be ignored.
+   One entry per instance of `ignore`.
+   Multiple instances can be defined.
+
+   **Attributes:**
+
+      - **type:**
+
+         This a simple regex pattern to filter out files.
+
+         **Value:** sregex
+
+         **Allowed:** Any directory or file name.
+
+.. _syscheck_frequency:
+
+frequency:
+^^^^^^^^^^
+
+   The frequency at which full system scans will be performed (in seconds).
+   Frequency should be no lower than 300 seconds, and larger for larger groups of files.
+
+   **Default:** 21600
+
+   **Allowed:** Time in seconds between scans.
+
+.. _syscheck_nodiff:
+
+nodiff:
+^^^^^^^
+
+   .. versionadded:: 3.0
+
+   List of files where track changes will be disabled.
+   This option can be used to not send diffs for sensitive files.
+
+   **Attributes:**
+
+      **type:**
+         This is a simple regex pattern to filter out files from the diff function.
+
+      **Value:** sregex
 
 
 
