@@ -1,0 +1,43 @@
+.. _management_email_alerts:
+
+.. _email_alerts_email_to:
+
+email_to:
+^^^^^^^^^
+
+   The recipient address of alert emails.
+
+   **Allowed:** A valid email address
+
+.. _email_alerts_level:
+
+level:
+^^^^^^
+
+   The minimum alert level for an email.
+
+   **Allowed:** Any alert level 0-16
+
+   .. note::
+
+      `level` should be set to or above teh `email_alert_level` in the `alerts` section of the configuration.
+
+.. _email_alerts_group:
+
+group:
+^^^^^^
+
+   Specifies a group that an alert must match for an email to be sent.
+   Multiple groups can be specified with a pipe (`|`) character.
+
+   **Allowed:** One or more groups
+
+.. _email_alerts_event_location:
+
+event_location:
+^^^^^^^^^^^^^^^
+
+   An alert must match this `event_location` for an email to be sent.
+   Only one `event_location` may be specified, the last entry will be used.
+
+   **Allowed:** Any single agent name, hostname, ip address, or log file
