@@ -41,3 +41,54 @@ event_location:
    Only one `event_location` may be specified, the last entry will be used.
 
    **Allowed:** Any single agent name, hostname, ip address, or log file
+
+.. _email_alerts_format:
+
+format:
+^^^^^^^
+
+   .. warning:
+
+      The sms option for `format` has been removed.
+      This option has remained for backwards compatibility.
+
+   Specifies the format of the email.
+
+   **Options:**
+
+      - full: normal emails
+
+.. _email_alerts_rule_id:
+
+rule_id:
+
+   Option to send granular emails based on the rule id.
+
+   **Allowed:**a One or more rule IDs, separated by a comma and a space.
+
+.. _email_alerts_do_not_delay:
+
+do_not_delay:
+^^^^^^^^^^^^^
+
+   Option to send the email immediately.
+
+   **Example:**
+
+      .. code-block:: console
+
+         <do_not_delay />
+
+.. _email_alerts_do_not_group:
+
+do_not_group:
+^^^^^^^^^^^^^
+
+   Option to not group alerts in an email.
+
+   **Example:**
+
+      .. code-block:: console
+
+         <do_not_group />
+
