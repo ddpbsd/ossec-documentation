@@ -50,10 +50,17 @@ Settings controlling the rootcheck functionality in OSSEC.
 localfile:
 ----------
 
+Settings specifying the location and format of logs for ingestion.
+
 .. include:: localfile.trst
 
 rules:
 ------
+
+Settings specifying rule locations.
+These settings are only valid on a Server or Local installation.
+
+.. include:: rules.trst
 
 command:
 --------
