@@ -176,15 +176,15 @@ query:
 
    **Example:***
 
-   The following configuration will only process events with an ID of 7040:
+      The following configuration will only process events with an ID of 7040:
 
-    .. code-block:: console
+       .. code-block:: console
 
-      <localfile>
-        <location>System</location>
-        <log_format>eventchannel</log_format>
-        <query>Event/System[EventID=7040]</query>
-      </localfile>
+         <localfile>
+           <location>System</location>
+           <log_format>eventchannel</log_format>
+           <query>Event/System[EventID=7040]</query>
+         </localfile>
 
    .. note::
 
