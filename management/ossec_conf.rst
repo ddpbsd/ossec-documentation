@@ -4,7 +4,8 @@
 ossec.conf
 ==========
 
-The configuration for OSSEC is mostly held in `/var/ossec/etc/ossec.conf`.
+The configuration for OSSEC is mostly held in `ossec.conf`.
+It is written in loose XML, and consists of a number of sections.
 
 
 global:
@@ -42,10 +43,14 @@ have been marked as such.
 rootcheck:
 ----------
 
+Settings controlling the rootcheck functionality in OSSEC.
+
 .. include:: rootcheck.trst
 
 localfile:
 ----------
+
+.. include:: localfile.trst
 
 rules:
 ------

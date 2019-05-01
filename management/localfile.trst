@@ -1,0 +1,113 @@
+.. _management_localfile:
+
+.. _localfile_location:
+
+location:
+^^^^^^^^^
+
+   Specify the location of a log file for ingestion.
+
+   **Default:** Multiple
+
+   **Allowed:** Path to a log file
+
+.. _localfile_log_format:
+
+log_format:
+^^^^^^^^^^^
+
+   Specify the format of the log file.
+   OSSEC assumes the logs are in the default format and have not been customized.
+
+   **Allowed:**
+
+   - syslog
+
+      `syslog` is used for plain text files with one log message per line.
+      The log messages do not have to be in a syslog format.
+
+   - snort-full
+
+      Snort's full text output format. 
+
+   - snort-fast
+
+      Snort's fast text output format.
+
+   - squid
+
+      Squid's default log format.
+
+   - iis
+
+      Microsoft IIS log format.
+
+   - eventlog
+
+      Microsoft Windows eventlog format.
+
+   - eventchannel
+
+      .. versionadded:: 2.8
+
+      Microsoft Windows eventlog format, using the EventApi.
+      This should allow OSSEC to monitor both "Windows" eventlogs and the more recent "Applications and Services" logs.
+
+      .. warning:
+
+         `eventchannel` cannot be used on Windows systems older than Vista.
+
+   - mysql_log
+
+      MySQL's log format.
+
+   - postgresql_log
+
+      Postgresql's log format.
+
+   - nmapg
+
+      Nmap's grepable log format.
+
+   - apache
+
+      Apache's default log format.
+
+   - command
+
+      This log format will run a command (as root).
+      Each line of the output will be treated as a separate log.
+
+      .. warning::
+
+         Cannot be specified in the `agent.conf`
+
+   - full_command
+
+      This log format rill run a command as root, and treat the entire output as a single log message.
+
+      .. warning::
+
+         Cannot be specified in the `agent.conf`
+
+   - djb-multilog
+
+      Daniel J. Bernstein's `multilog <https://cr.yp.to/daemontools/multilog.html>`_ output.
+
+   - multi-line
+
+      This format type is for log messages consisting of multiple lines.
+      The number of lines used per message should be the same, and the number of 
+      lines should be specified in the format:
+
+      .. code-block:: xml
+
+         <log_format>multi-line: 3</log_format>
+
+
+.. _localfile_command:
+
+command:
+^^^^^^^^
+
+
