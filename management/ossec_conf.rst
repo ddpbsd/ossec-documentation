@@ -32,6 +32,8 @@ Settings defining the configuration of `ossec-remoted` on the OSSEC management s
 syscheck:
 ---------
 
+.. include:: syscheck.trst
+
 rootcheck:
 ----------
 

@@ -1,0 +1,26 @@
+.. _management_syscheck:
+
+.. _syscheck_directories:
+
+directories:
+^^^^^^^^^^^^
+
+   The `<directories>` option specifies which directories `ossec-syscheckd` will monitor.
+   Multiple directories can be specified per instance, separated with a comma. 
+   Windows drive letters without directories are not valid, at a minimum `.` should be included (`D:\.`).
+   These settings are local to the system they are configured on.
+
+   **Default:** `/etc,/usr/bin,/usr/sbin,/bin,/sbin`
+
+   **Attributes:**
+
+   - **realtime:**
+
+      Enable realtime monitoring of files on Linux and Windows systems.
+
+      **Default:** no
+
+      **Allowed:** yes/no
+
+
+
