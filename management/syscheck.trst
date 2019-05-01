@@ -141,5 +141,115 @@ nodiff:
 
       **Value:** sregex
 
+.. _syscheck_scantime:
+
+scantime:
+^^^^^^^^^
+
+   Time to run the scans (can be in the formats of 21pm, 8:30, 12am, etc).
+
+   **Allowed:** Time to run the scan
+
+   .. note::
+
+      This may delay the initialization of realtime scans.
+
+.. _syscheck_scan_day:
+
+scan_day:
+^^^^^^^^^
+
+   Day of the week to run the scans.
+
+   **Allowed:** Day of the week
+
+.. _syscheck_auto_ignore:
+
+auto_ignore:
+^^^^^^^^^^^^
+
+   After 3 changes to a file, further changes to a file will be ignored.
+   Setting `auto_ignore` to `no` will disable this.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+   **Valid on:** Server and local installations
+
+.. _syscheck_alert_new_files:
+
+alert_new_files:
+^^^^^^^^^^^^^^^^
+
+   By default syscheck will not trigger an alert on file creation.
+   Setting `alert_new_files` to `yes` will make it do so.
+
+   **Default:** no
+
+   **Allowed:** yes/no
+
+   **Valid on:** Server and local installations
+
+   .. note::
+
+      New files will only be detected on a full scan, this option does not affect realtime operations.
+
+.. _syscheck_scan_on_start:
+
+scan_on_start:
+^^^^^^^^^^^^^^
+
+   Controls whether `ossec-syscheckd` will perform a full scan when it is started.
+
+   **Default:** yes
+
+   **Allowed:** yes/no
+
+.. _syscheck_windows_registry:
+
+windows_registry:
+^^^^^^^^^^^^^^^^^
+
+   Specifies entries to be monitored in the Windows registry.
+   One entry per instance of this options.
+   Multiple instances can be used.
+
+   **Allowed:** Any registry path
+
+   .. note::
+
+      New entries will not trigger alerts, only changes to existing entries.
+
+.. _syscheck_registry_ignore:
+
+registry_ignore:
+^^^^^^^^^^^^^^^^
+
+   List of registry entries to be ignore.
+   One entry per instance of this option.
+   Multiple instances can be specified.
+
+   **Allowed:** Any registry path
+
+.. _syscheck_prefilter_cmd:
+
+prefilter_cmd:
+^^^^^^^^^^^^^^
+
+   Command to run to prevent prelinking from creating false positives.
+
+   **Example:**
+
+   .. code-block:: xml
+
+      <prefilter_cmd>/usr/sbin/prelink -y</prefilter_cmd>
+
+   .. note::
+
+      This option can negatively impact performance.
+      The configured command will be run for each file checked.
+
+
 
 
