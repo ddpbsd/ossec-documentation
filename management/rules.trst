@@ -1,82 +1,82 @@
-   .. _management_rules:
-   
-   .. _rules_include:
-   
-   include:
-   ^^^^^^^^
-   
-      Load a single rule file.
-      The rule files are stored in `rules/`, relative to the install location of OSSEC.
-   
-      **Allowed:** File name of a rule file.
-   
-   .. _rules_rule:
-   
-   rule:
-   ^^^^^
-   
-      Load a single rule file.
-   
-      .. note::
-   
-         This is an alias for `include`.
-   
-   .. rules_rule_dir:
-   
-   rule_dir:
-   ^^^^^^^^^
-   
-      Specify a directory of rule files.
-      The rule files will be loaded alphebetically.
-   
-      **Attributes:**
-   
-         - **pattern:** is a regex match string used to filter the files in the directory.
-   
-            **Default:** Regex `_rules.xml$` is used if no other pattern is specified.
-   
-      **Allowed:** Path to a directory of rule files, relative to the OSSEC installation location.
-   
-   .. _rules_decoder:
-   
-   decoder:
-   ^^^^^^^^
-   
-      Specify the path to a decoder file to be used by `ossec-analysisd`.
-      If no decoders are specified in the `ossec.conf` the default `etc/decoder.xml` and `etc/local_decoder.xml` are used.
-      If a decoder is specified with `decoder` or `decoder_dir` the default `decoder.xml` and `local_decoder.xml` will not be used.
-   
-      **Allowed:** Path to a decoder file relative to OSSEC's install location.
-   
-   .. _rules_decoder_dir:
-   
-   decoder_dir:
-   ^^^^^^^^^^^^
-   
-      Specify the path to a directory of decoder files.
-      Files will be loaded in alphebetical order.
-   
-      **Attributes:**
-   
-         - **pattern:** is a regex match string used to filter the files in the directory.
-   
-            **Default:** Regex `.xml$` is used if no other pattern is specified.
-   
-      **Allowed:** Path to a directory of rule files, relative to the OSSEC installation location.
-   
-   .. _rules_list:
-   
-   list:
-   ^^^^^
-   
-      Specify a single cdb reference for inclusion by other rules.
-      File extensions should not be included.
-   
-      **Example:**
-   
-         For a cdb list named `blocked_hosts.txt` use:
-   
-         .. code-block:: xml
-   
-            <list>rules/lists/blocked_hosts</list>
-   
+.. _management_rules:
+
+.. _rules_include:
+
+include:
+^^^^^^^^
+
+   Load a single rule file.
+   The rule files are stored in `rules/`, relative to the install location of OSSEC.
+
+   **Allowed:** File name of a rule file.
+
+.. _rules_rule:
+
+rule:
+^^^^^
+
+   Load a single rule file.
+
+   .. note::
+
+      This is an alias for `include`.
+
+.. rules_rule_dir:
+
+rule_dir:
+^^^^^^^^^
+
+   Specify a directory of rule files.
+   The rule files will be loaded alphebetically.
+
+   **Attributes:**
+
+      - **pattern:** is a regex match string used to filter the files in the directory.
+
+         **Default:** Regex `_rules.xml$` is used if no other pattern is specified.
+
+   **Allowed:** Path to a directory of rule files, relative to the OSSEC installation location.
+
+.. _rules_decoder:
+
+decoder:
+^^^^^^^^
+
+   Specify the path to a decoder file to be used by `ossec-analysisd`.
+   If no decoders are specified in the `ossec.conf` the default `etc/decoder.xml` and `etc/local_decoder.xml` are used.
+   If a decoder is specified with `decoder` or `decoder_dir` the default `decoder.xml` and `local_decoder.xml` will not be used.
+
+   **Allowed:** Path to a decoder file relative to OSSEC's install location.
+
+.. _rules_decoder_dir:
+
+decoder_dir:
+^^^^^^^^^^^^
+
+   Specify the path to a directory of decoder files.
+   Files will be loaded in alphebetical order.
+
+   **Attributes:**
+
+      - **pattern:** is a regex match string used to filter the files in the directory.
+
+         **Default:** Regex `.xml$` is used if no other pattern is specified.
+
+   **Allowed:** Path to a directory of rule files, relative to the OSSEC installation location.
+
+.. _rules_list:
+
+list:
+^^^^^
+
+   Specify a single cdb reference for inclusion by other rules.
+   File extensions should not be included.
+
+   **Example:**
+
+      For a cdb list named `blocked_hosts.txt` use:
+
+      .. code-block:: xml
+
+         <list>rules/lists/blocked_hosts</list>
+
