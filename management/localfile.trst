@@ -110,4 +110,83 @@ log_format:
 command:
 ^^^^^^^^
 
+   The command to be run when using ithe `command` or `full_command` `log_format`.
+
+   **Allowed:** Any command with arguments
+
+.. _localfile_command_alias:
+
+command_alias:
+^^^^^^^^^^^^^^
+
+   An alias for a command to help with identification.
+   This alias will replace the command in the log output.
+
+   **Example:**
+
+   The following alias:
+
+   .. code-block:: xml
+
+      <alias>usb-check</alias>
+
+   would change the output from:
+
+   .. code-block:: console
+
+      ossec: output: 'reg QUERY HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR':
+
+   to:
+
+   .. code-block:: console
+
+      ossec: output: 'usb-check':
+
+   **Allowed:** Any string
+
+.. _localfile_check_diff:
+
+check_diff:
+^^^^^^^^^^^
+
+   Store the output of an event in an internal database, and compare new output to the previous.
+   If the output has changed an alert will be triggered.
+
+.. _localfile_only-future-events:
+
+only-future-events:
+^^^^^^^^^^^^^^^^^^^
+
+   Only read log messages starting from the time the log is opened.
+   By default `ossec-logcollector` will read events from the beginning of the log or from the message it last read.
+
+   **Allowed:** yes
+
+   .. note::
+
+      This only applies to `eventchannel` log sources.
+
+.. _localfile_query:
+
+query:
+^^^^^^
+
+   Specify an XPATH query following the event schema in order to filter the events OSSEC will process.
+   See `Microsoft's documentation <http://msdn.microsoft.com/en-us/library/windows/desktop/aa385201%28v=vs.85%29.aspx>`_ for more details.
+
+   **Example:***
+
+   The following configuration will only process events with an ID of 7040:
+
+    .. code-block:: console
+
+      <localfile>
+        <location>System</location>
+        <log_format>eventchannel</log_format>
+        <query>Event/System[EventID=7040]</query>
+      </localfile>
+
+   .. note::
+
+      This only applies to `eventchannel` log sources.
 
