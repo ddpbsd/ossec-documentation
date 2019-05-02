@@ -9,4 +9,5 @@ About OSSEC
    :glob:
 
    architecture
+   supported
 
