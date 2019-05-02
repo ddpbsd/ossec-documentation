@@ -27,7 +27,7 @@ rootkit_files:
 
    Specifies the location of the rootkit files database.
 
-   **Default:** `/etc/shared/rootkit_files.txt
+   **Default:** `/etc/shared/rootkit_files.txt`
 
    **Allowed:** A file with the rootkit files signatures
 
@@ -235,7 +235,7 @@ check_winapps:
 
    **Allowed:** yes/no
 
-.. _rootcheck_check_winaudit
+.. _rootcheck_check_winaudit:
 
 check_winaudit:
 ^^^^^^^^^^^^^^^
@@ -263,6 +263,7 @@ skip_nfs:
 ^^^^^^^^^
 
    .. versionadded:: 2.9.0
+
    If enabled, this options prevents rootcheck from scanning network filesystems.
    Currently works on Linux, FreeBSD, and OpenBSD (support added in v3.3).
    If enabled, it will abort checks running on CIFS and NFS mounts.

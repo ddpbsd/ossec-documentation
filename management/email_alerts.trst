@@ -64,7 +64,7 @@ rule_id:
 
    Option to send granular emails based on the rule id.
 
-   **Allowed:**a One or more rule IDs, separated by a comma and a space.
+   **Allowed:** One or more rule IDs, separated by a comma and a space.
 
 .. _email_alerts_do_not_delay:
 

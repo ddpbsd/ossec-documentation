@@ -9,9 +9,9 @@ type:
 
    **Available options:**
 
-   - **ssh_integrity_check_bsd:** Perform a file integrity check via ssh on *BSD
+   - **ssh_integrity_check_bsd:** Perform a file integrity check via ssh on BSD
 
-   - **ssh_integrity_check_linux:* Perform a file integrity check via ssh on Linux
+   - **ssh_integrity_check_linux:** Perform a file integrity check via ssh on Linux
 
    - **ssh_generic_diff:** Run a command and compare the output to previous command runs
 
