@@ -18,6 +18,7 @@ Solaris.
    :caption: Contents:
 
    about/index
+   manual/index
    installation/index
    management/index
 
