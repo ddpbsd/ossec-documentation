@@ -7,6 +7,7 @@ Installation
 
 .. toctree::
 
+   types
    installation-requirements
    build-options
    installation-source
