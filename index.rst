@@ -19,7 +19,7 @@ Solaris.
 
    about/index
    manual/index
-   management/index
+   configuration/index
 
 Indices and tables
 ==================
