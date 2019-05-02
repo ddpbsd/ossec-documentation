@@ -1,7 +1,7 @@
 .. _installation_compile-ossec-mingw: 
 
-Compiling with MinGW
-====================
+Compiling OSSEC 3.x with MinGW
+==============================
 
 OSSEC's Windows agent is compiled using `MinGW <http://www.mingw.org/>`_
 
@@ -19,8 +19,8 @@ Requirements:
 
 * PCRE2 source tree in `src/external`
 
-Compiling OSSEC 3.x with MinGW:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Compilation:
+^^^^^^^^^^^^
 
 Change directory to the src directory:
 
