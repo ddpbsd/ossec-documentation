@@ -1,5 +1,8 @@
 .. _installation_compile-ossec-mingw: 
 
+Compiling with MinGW
+====================
+
 OSSEC's Windows agent is compiled using `MinGW <http://www.mingw.org/>`_
 
 
