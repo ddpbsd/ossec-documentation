@@ -1,0 +1,37 @@
+.. _management_database_output:
+
+.. _database_output_hostname:
+
+hostname:
+^^^^^^^^^
+
+   IP address of the database server.
+
+.. _database_output_username:
+
+username:
+^^^^^^^^^
+
+   The username for accessing the database.
+
+.. _database_output_password:
+
+password:
+^^^^^^^^^
+
+   The password for the user connecting to the database.
+
+.. _database_output_database:
+
+database:
+^^^^^^^^^
+
+   The database where alerts will be stored.
+
+.. _database_output_type:
+
+type:
+^^^^^
+
+   The type of database: MySQL or PostgreSQL.
+

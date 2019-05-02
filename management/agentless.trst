@@ -1,0 +1,59 @@
+.. _management_agentless:
+
+.. _agentless_type:
+
+type:
+^^^^^
+
+   The type of check to be run on the agentless system.
+
+   **Available options:**
+
+   - **ssh_integrity_check_bsd:** Perform a file integrity check via ssh on *BSD
+
+   - **ssh_integrity_check_linux:* Perform a file integrity check via ssh on Linux
+
+   - **ssh_generic_diff:** Run a command and compare the output to previous command runs
+
+   - **ssh_pixconfig_diff:** Compare the current running Cisco PIX configuration to previous invocations
+
+.. _agentless_frequency:
+
+frequency:
+^^^^^^^^^^
+
+   Specifies the time in seconds between each check.
+
+.. _agentless_host:
+
+host:
+^^^^^
+
+   Specifies the username and host to be checked.
+
+   **Example:**
+
+      .. code-block:: xml
+
+         <host>root@linux.server.example.com</host>
+
+.. _agentless_state:
+
+state:
+^^^^^^
+
+   Specifies whether the checks are periodic or periodic_diff.
+
+   **Available options:**
+
+   - **periodic:** The output from the script is processes by the OSSEC management server
+
+   - **periodic_diff:** The output of the script is compared to previous invocations
+
+.. _agentless_arguments:
+
+arguments:
+^^^^^^^^^^
+
+   Specifies the arguments passed to the script.
+

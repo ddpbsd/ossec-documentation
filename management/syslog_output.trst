@@ -1,0 +1,77 @@
+.. _management_syslog_output:
+
+.. _syslog_output_server:
+
+server:
+^^^^^^^
+
+   Specifies the IP address of the syslog server.
+
+.. _syslog_output_port:
+
+port:
+^^^^^
+
+   Specifies the port of the syslog server.
+
+.. _syslog_output_level:
+
+level:
+^^^^^^
+
+   Specifies the minimum alert level for alerts to be forwarded.
+
+.. _syslog_output_group:
+
+group:
+^^^^^^
+
+   Alerts belonging to the configured group will be forwarded.
+   Multiple groups can be specified, separated with the pipe (`|`) character.
+
+.. _syslog_output_rule_id:
+
+rule_id:
+^^^^^^^^
+
+   Alerts matching the configured rule ID will be forwarded.
+
+.. _syslog_output_location:
+
+location:
+^^^^^^^^^
+
+   Alerts from this location will be forwarded.
+
+.. _syslog_output_usq_fqdn:
+
+use_fqdn:
+^^^^^^^^^
+
+   ..versionadded: 2.9.0
+
+   By default OSSEC truncates the hostname at the first period (`.`) when generating syslog messages.
+   Setting this option to `yes` will force it to use the full hostname of the server.
+
+   **Default:** no
+
+   **Allowed:** yes/no
+
+.. _syslog_output_format:
+
+format:
+^^^^^^^
+
+   `ossec-csyslogd` can send alerts in multiple formats.
+   The default format is a standard syslog message.
+
+   **Available options:**
+
+   - **default:** Default syslog messages
+
+   - **CEF:** ArcSight Common Event Format
+
+   - **json:** JSON
+
+   - **splunk:** A format for use with Splunk
+

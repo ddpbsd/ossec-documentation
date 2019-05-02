@@ -95,15 +95,36 @@ Settings for which alerts should trigger emails.
 syslog_output:
 --------------
 
+OSSEC is able to forward alerts via syslog in a number of formats.
+These options are for use on a Server or Local installation.
+
+.. include:: syslog_output.trst
+
 database_output:
 ----------------
+
+OSSEC can store alerts in MySQL or PostgreSQL databases.
+These options are for use on a Server or Local installation.
+
+.. note::
+
+   OSSEC must be compiled with database support for `ossec-dbd` to function.
+
+.. include:: database_output.trst
 
 agentless:
 ----------
 
+Configures scripts to be run against systems where an agent cannot be installed.
+
+.. include:: agentless.trst
+
 reports:
 --------
 
+Configuration for automated daily reports.
+This is only valid on Server and Local installations.
 
+.. include:: reports.trst
 
 
