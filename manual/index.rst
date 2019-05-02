@@ -9,4 +9,8 @@ OSSEC Manual
    installation/index
    addagent
    authd
+   agentless
+   logmonitoring
+   decoders
+   rules
 
