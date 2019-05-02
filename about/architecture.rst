@@ -3,8 +3,8 @@
 OSSEC Architecture
 ==================
 
-OSSEC is comprised of multiplepieces that work together. In an agent/server configuration the central manager is responsible
-for receiving information from agents, syslog devices, and from agentless devices.
+OSSEC is made up of multiple pieces working together.
+In an agent/server configuration the central manager is responsible for receiving information from agents, syslog devices, and from agentless devices.
 
 In a stand-alone environment a system mostly monitors itself, performing all of the functions of both the agent and server.
 
