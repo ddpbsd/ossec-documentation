@@ -11,6 +11,9 @@ allowing the agent to communicate with the manager.
 `manage_agents` provides both a menu based interface and a command line
 interface. When run without any arguments, the menu is presented.
 
+If an agent is added with a specific IP address, it must be unique.
+Duplicate IP addresses will cause issues with agents connecting to the server.
+
 Adding an agent:
 ^^^^^^^^^^^^^^^^
 
