@@ -1,0 +1,84 @@
+.. _management_active-response:
+
+.. _active-response_disabled:
+
+disabled:
+^^^^^^^^^
+
+   Disables active response if set to `yes`.
+   Active response defaults to enabled on Unix-like systems and disabled on Windows.
+   Setting `disabled` to `yes` on an OSSEC management server will disable all active response.
+   Disabling it on an agent will only disable it for that agent.
+
+.. _active-response_command:
+
+command:
+^^^^^^^^
+
+   Specifies the command to be run when the active response is triggered.
+
+.. _active-response_location:
+
+location:
+^^^^^^^^^
+
+   Specifies where the active response will be run.
+
+   **Available options:**
+
+   - local: the agent that generated the event
+
+   - server: the OSSEC management server
+
+   - defined-agent: on a specific agent
+
+   - all: all agents
+
+.. _active-response_agent_id:
+
+agent_id:
+^^^^^^^^^
+
+   Specifies the agent ID to run the active response on when using `defined-agent` as the `location`.
+
+.. _active-response_level:
+
+level:
+^^^^^^
+
+   The active response will be executed on any event of the specified level or higher.
+
+.. _active-response_rules_group:
+
+rules_group:
+^^^^^^^^^^^^
+
+   The active response will be executed on any alert with the specified group.
+   Multiple groups can be defined, separated with the pipe (`|`) character.
+
+.. _active-response_rules_id:
+
+rules_id:
+^^^^^^^^^
+
+   The active response will be executed on any alert with the specified rule ID.
+   Multiple IDs can be specified separated by a comma.
+
+.. _active-response_timeout:
+
+timeout:
+^^^^^^^^
+
+   Specifies the amount of time, in seconds, before an active response will attempt to reverse its actions.
+   For example IPs can be unblocked or entries removed from the `hosts.deny` file.
+
+.. _active-response_repeated_offenders:
+
+repeated_offenders:
+^^^^^^^^^^^^^^^^^^^
+
+   A comma separated list or increasing timeouts (in minutes) for repeat offenders.
+   There can be a maximum of 5 entries.
+
+   **Valid on:** Agent and Local
+

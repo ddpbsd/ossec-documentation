@@ -65,8 +65,15 @@ These settings are only valid on a Server or Local installation.
 command:
 --------
 
+Definitions for commands available to the active response system.
+
+.. include:: command.trst
+
 active-response:
 ----------------
+
+
+.. include:: active-response.trst
 
 alerts:
 -------
@@ -80,6 +87,8 @@ The `<alerts>` section is valid on Server and Local installations only.
 
 email_alerts:
 -------------
+
+Settings for which alerts should trigger emails.
 
 .. include:: email_alerts.trst
 
