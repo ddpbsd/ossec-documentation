@@ -48,7 +48,7 @@ location:
 use_fqdn:
 ^^^^^^^^^
 
-   ..versionadded: 2.9.0
+   .. versionadded: 2.9.0
 
    By default OSSEC truncates the hostname at the first period (`.`) when generating syslog messages.
    Setting this option to `yes` will force it to use the full hostname of the server.
