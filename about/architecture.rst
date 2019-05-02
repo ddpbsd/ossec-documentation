@@ -41,7 +41,7 @@ User List:
 +========+===================================================+
 | root   | ossec-syscheckd, ossec-execd, ossec-logcollector  |
 +--------+---------------------------------------------------+
-| ossec  | ossec-analysisd, ossec-monitord, ossec-agentlessd |                  |
+| ossec  | ossec-analysisd, ossec-monitord, ossec-agentlessd |
 +--------+---------------------------------------------------+
 | ossecr | ossec-remoted                                     |
 +--------+---------------------------------------------------+
