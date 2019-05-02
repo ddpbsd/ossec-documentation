@@ -6,4 +6,5 @@ OSSEC Manual
 
 .. toctree::
 
+   installation/index
 
