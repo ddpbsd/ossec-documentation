@@ -3,39 +3,50 @@
 OSSEC Architecture
 ==================
 
-OSSEC is made up of multiple pieces working together.
-In an agent/server configuration the central manager is responsible for receiving information from agents, syslog devices, and from agentless devices.
+Linux and unix-like systems:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In a stand-alone environment a system mostly monitors itself, performing all of the functions of both the agent and server.
+OSSEC runs as multiple processes, the exact number differing between agent, server, and local installations.
+Most processes communicates through unix sockets under the `queue` directory inside of the OSSEC installation location.
+When possible the OSSEC processes run with limited privileges and chroot to the install location.
+This is modeled after the `Privilege Separation tehniques <https://www.openbsd.org/papers/auug04/mgp00030.html>`_ used in OpenBSD.
 
+Windows:
+^^^^^^^^
 
-Internal Architecture:
-^^^^^^^^^^^^^^^^^^^^^^
+OSSEC runs as a single service.
 
-On Microsoft Windows systems, OSSEC runs as a single service. On unix-like systems it runs as several
-processes, communicating via sockets.
+Agent/Server Communication:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-On an agent `ossec-agentd` communicated with the manager. It passes along messages from `ossec-syscheckd` and
-`ossec-logcollector`.
-
-On the OSSEC manager the `ossec-remoted` process is responsible for communicating with the agents, and passing the information
-to `ossec-analysisd`. `ossec-analysisd` receives log messages and decodes them. It then compares the messages to a set of rules
-and will iniate alerting when necessary.
-
-Daemons like `ossec-maild` and `ossec-csyslogd` can read the alert log file and forward the alerts.
-
-.. Insert picture of data flow through OSSEC
-
+The OSSEC server listens on 1514/udp via `ossec-remoted`.
+Agents send messages to the server via `ossec-agentd`.
+The communication is two-way, but initiated by the agent.
 
 Agentless and Network Devices:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-OSSEC has the ability to communicate with systems that cannot have the agent software installed. This is typically done through
-SSH, and a few pre-made `Expect <https://core.tcl.tk/expect/index>`_ scripts are provided for a number of systems.
+OSSEC has the ability to communicate with systems that cannot have the agent software installed.
+This is typically done through SSH, and a few pre-made `Expect <https://core.tcl.tk/expect/index>`_
+scripts are provided for a number of systems.
 
 In addition to the agentless support, OSSEC can receive syslog messages from any number of devices and process them as if the
 messages were delivered via an agent.
 
+User List:
+^^^^^^^^^^
+
++--------+---------------------------------------------------+
+| User   | Process                                           |
++========+===================================================+
+| root   | ossec-syscheckd, ossec-execd, ossec-logcollector  |
++--------+---------------------------------------------------+
+| ossec  | ossec-analysisd, ossec-monitord, ossec-agentlessd |                  |
++--------+---------------------------------------------------+
+| ossecr | ossec-remoted                                     |
++--------+---------------------------------------------------+
+| ossecm | ossec-maild, ossec-csyslogd                       |
++--------+---------------------------------------------------+
 
 Process List:
 ^^^^^^^^^^^^^
