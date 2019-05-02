@@ -7,4 +7,6 @@ OSSEC Manual
 .. toctree::
 
    installation/index
+   addagent
+   authd
 
