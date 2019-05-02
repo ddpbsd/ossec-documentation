@@ -87,7 +87,7 @@ directories:
 
    - **no_recurse:**
 
-      ..versionadded:: 3.2
+      .. versionadded:: 3.2
 
       Do not recurse into the defined directory. `yes` unintuitively disables recursion.
 

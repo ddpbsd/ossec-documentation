@@ -166,7 +166,7 @@ host_information:
 jsonout_output:
 ^^^^^^^^^^^^^^^
 
-   ..versionadded:: 2.9.0
+   .. versionadded:: 2.9.0
    Enable or disable alert logging in a json format.
    Alerts will be saved to `alerts.json`.
 
