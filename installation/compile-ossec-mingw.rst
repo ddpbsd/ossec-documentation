@@ -6,11 +6,11 @@ OSSEC's Windows agent is compiled using `MinGW <http://www.mingw.org/>`_
 Requirements:
 ^^^^^^^^^^^^^
 
-* MinGW
+* `MinGW <http://www.mingw.org/>`_
 
 * `nsis <http://nsis.sourceforge.net/Main_Page>`_
 
-* OpenSSL (optional)
+* `OpenSSL <https://www.openssl.org/>`_/`LibreSSL <https://www.libressl.org/>`_ (optional)
 
 .. versionadded:: 3.3
 
