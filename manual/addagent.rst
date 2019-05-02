@@ -38,7 +38,19 @@ The menu interface for `manage_agents`
 
 Typing `a` or `A` will provide prompts for information about the agent.
 
-Example of adding an agent:
+When adding an agent, `manage_agents` will prompt for information about the agent.
+This information includes an ID, name, and IP address.
+Each entry should be unique. Duplicating information will cause issues with agents connecting to the server.
+
+The ID is a number, starting with 1. This ID is used by OSSEC for configuration.
+The name of the agent can also be used in a number of configuration options.
+The IP address should be the IP address the OSSEC server will see from the agent.
+Instead of a specific IP address a CIDR address can be used for DHCP ranges or `any` can be used if the IP is not known (dhcp from an ISP).
+
+After the first agent is added, the OSSEC server processes should be restarted.
+
+Adding an agent example:
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -146,5 +158,4 @@ The menu on an agent only has 2 options: import a key and quit.
    Confirm adding it?(y/n):y
 
 Importing a key will create a `clients.key` file in `/var/ossec/etc`.
-
 
