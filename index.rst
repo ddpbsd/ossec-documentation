@@ -20,11 +20,6 @@ Solaris.
    about/index
    installation/index
    management/index
-   loganalysis/index
-   syscheck/index
-   rootcheck/index
-   output/index
-   activeresponse/index
 
 Indices and tables
 ==================
