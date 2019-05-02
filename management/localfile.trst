@@ -5,7 +5,7 @@
 location:
 ^^^^^^^^^
 
-   Specify the location of a log file for ingestion.
+   Specifies the location of a log file for ingestion.
 
    **Default:** Multiple
 
@@ -16,7 +16,7 @@ location:
 log_format:
 ^^^^^^^^^^^
 
-   Specify the format of the log file.
+   Specifies the format of the log file.
    OSSEC assumes the logs are in the default format and have not been customized.
 
    **Allowed:**
@@ -171,7 +171,7 @@ only-future-events:
 query:
 ^^^^^^
 
-   Specify an XPATH query following the event schema in order to filter the events OSSEC will process.
+   Specifies an `XPATH` query following the event schema in order to filter the events OSSEC will process.
    See `Microsoft's documentation <http://msdn.microsoft.com/en-us/library/windows/desktop/aa385201%28v=vs.85%29.aspx>`_ for more details.
 
    **Example:**

@@ -5,7 +5,7 @@
 server-ip:
 ^^^^^^^^^^
 
-   Specify the IP address of the OSSEC management server.
+   Specifies the IP address of the OSSEC management server.
 
    **Allowed:** Any valid IP address
 
@@ -14,7 +14,7 @@ server-ip:
 server-hostname:
 ^^^^^^^^^^^^^^^^
 
-   Specify the hostname of the OSSEC management server.
+   Specifies the hostname of the OSSEC management server.
 
    **Allowed:** Any valid hostname
 

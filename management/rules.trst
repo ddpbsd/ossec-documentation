@@ -26,7 +26,7 @@ rule:
 rule_dir:
 ^^^^^^^^^
 
-   Specify a directory of rule files.
+   Specifies a directory containing rule files.
    The rule files will be loaded alphebetically.
 
    **Attributes:**
@@ -42,7 +42,7 @@ rule_dir:
 decoder:
 ^^^^^^^^
 
-   Specify the path to a decoder file to be used by `ossec-analysisd`.
+   Specifies the path to a decoder file to be used by `ossec-analysisd`.
    If no decoders are specified in the `ossec.conf` the default `etc/decoder.xml` and `etc/local_decoder.xml` are used.
    If a decoder is specified with `decoder` or `decoder_dir` the default `decoder.xml` and `local_decoder.xml` will not be used.
 
@@ -53,7 +53,7 @@ decoder:
 decoder_dir:
 ^^^^^^^^^^^^
 
-   Specify the path to a directory of decoder files.
+   Specifies the path to a directory containing decoder files.
    Files will be loaded in alphebetical order.
 
    **Attributes:**
@@ -69,7 +69,7 @@ decoder_dir:
 list:
 ^^^^^
 
-   Specify a single cdb reference for inclusion by other rules.
+   Specifies a single cdb reference for inclusion by other rules.
    File extensions should not be included.
 
    **Example:**

@@ -25,7 +25,7 @@ base_directory:
 rootkit_files:
 ^^^^^^^^^^^^^^
 
-   Specify the location of the rootkit files database.
+   Specifies the location of the rootkit files database.
 
    **Default:** `/etc/shared/rootkit_files.txt
 
@@ -36,7 +36,7 @@ rootkit_files:
 rootkit_trojans:
 ^^^^^^^^^^^^^^^^
 
-   Specify the location of the rootkit trojans database.
+   Specifies the location of the rootkit trojans database.
 
    **Default:** `/etc/shared/rootkit_trojans.txt`
 
@@ -47,7 +47,7 @@ rootkit_trojans:
 windows_audit:
 ^^^^^^^^^^^^^^
 
-   Specify the location of the Windows audit database.
+   Specifies the location of the Windows audit database.
 
    **Default:** `./shared/win_audit_rcl.txt`
 
@@ -58,7 +58,7 @@ windows_audit:
 system_audit:
 ^^^^^^^^^^^^^
 
-   Specify the location of the system audit database.
+   Specifies the location of the system audit database.
    One entry per instance of this option.
    This option can be specified multiple times.
 
@@ -73,7 +73,7 @@ system_audit:
 windows_apps:
 ^^^^^^^^^^^^^
 
-   Specify the location of the Windows application audit database.
+   Specifies the location of the Windows application audit database.
 
    **Default:** `./shared/win_applications_rcl.txt`
 
@@ -84,7 +84,7 @@ windows_apps:
 windows_malware:
 ^^^^^^^^^^^^^^^^
 
-   Specify the location of the Windows malware database.
+   Specifies the location of the Windows malware database.
 
    **Default:** `./shared/win_malware_rcl.txt`
 

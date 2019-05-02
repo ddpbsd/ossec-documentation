@@ -44,7 +44,7 @@ allowed-ips:
 ^^^^^^^^^^^^
 
    A list of IP addresses that are permitted to send syslog messages to `ossec-remoted`.
-   Specify one IP address per instance of `allowed-ips`.
+   Each instance of `allowed-ips` can specify one IP address.
    Multiple instances are permitted.
 
    **Allowed:** Any IP address or network
@@ -59,7 +59,7 @@ deny-ips:
 ^^^^^^^^^
 
    A list of IP addresses that are not permitted to send syslog messages to `ossec-remoted`.
-   Specify one IP address per instance of `deny-ips`.
+   Each instance of `deny-ips` can specify one IP address.
    Multiple instances are permitted.
 
    *Allowed:** Any IP address or network
