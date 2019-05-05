@@ -10,7 +10,6 @@ OSSEC Manual
    addagent
    authd
    agentless
-   logmonitoring
    decoders
    rules
 
