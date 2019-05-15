@@ -13,8 +13,8 @@ PCRE2:
 
 .. versionadded:: 3.3
 
-PCRE2 has been added to version 3.3. The build system can either use the system's PCRE2 libraries,
-or the necessary bits can be built as part of the installation process.
+PCRE2 support has been added to version 3.3. The build system can either use the system's PCRE2 libraries,
+or the library can be built as part of the installation process.
 
 The default build process expects the `pcre2-10.32` source to be installed in `src/external`:
 
@@ -30,6 +30,12 @@ To use the system's PCRE2, set the `PCRE2_SYSTEM` variable to yes:
 
    # cd ossec-hids-*
    # PCRE2_SYSTEM=yes ./install.sh
+
+If the system's PCRE2 library is used, verify that JIT is enabled. If it is not, set `USE_PCRE2_JIT` to no:
+
+.. code-block:: console
+
+   # PCRE2_SYSTEM=yes USE_PCRE2_JIT=no ./install.sh
 
 zlib:
 ^^^^^
