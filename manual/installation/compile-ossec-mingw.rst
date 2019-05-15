@@ -3,7 +3,7 @@
 Compiling OSSEC 3.x with MinGW
 ==============================
 
-OSSEC's Windows agent is compiled using `MinGW <http://www.mingw.org/>`_
+OSSEC's Windows agent is compiled on Linux using `MinGW <http://www.mingw.org/>`_
 
 
 Requirements:
