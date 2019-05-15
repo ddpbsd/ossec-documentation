@@ -61,6 +61,7 @@ format:
 .. _email_alerts_rule_id:
 
 rule_id:
+^^^^^^^^
 
    Option to send granular emails based on the rule id.
 

@@ -175,8 +175,6 @@ jsonout_output:
 
    **Allowed:** yes/no
 
-Allowed:** Any IP address or netblock
-
    **Valid on:*** Server and Local
 
 .. _global_prelude_output:
