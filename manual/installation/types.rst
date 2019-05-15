@@ -11,11 +11,26 @@ The server installation includes the agent functionality for the local system.
 Server:
 ^^^^^^^
 
-Most of the processing is done on the OSSEC server, and the rules/decoders are installed there.
+In an OSSEC server/agent installation, the agents pass log messages to the server for processing.
+Rules and decoders are installed only on the server.
+Alerts are generated and distributed from the server.
 
 Agent:
 ^^^^^^
 
 OSSEC agents tail the local log files and forward the messages to the OSSEC server.
 Local file integrity monitoring messages are also forwarded to the server.
+
+Hybrid:
+^^^^^^^
+
+A hybrid installation is both a server and agent.
+As a server it processes logs for a number of agents, and as an agent it forwards alerts to another server.
+
+Local:
+^^^^^^
+
+A local, or stand-alone, installation resides entirely on a singular system.
+It is not associated with a server or agents.
+Decoders and rules will be stored on a local installation.
 
