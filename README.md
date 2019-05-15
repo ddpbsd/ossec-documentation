@@ -1,7 +1,7 @@
-#The Great OSSEC Documentation Re-write!
+# The Great OSSEC Documentation Re-write!
 
 
-##History
+## History
 
 In 2010 @jrossi re-wrote the OSSEC documentation.
 
@@ -13,18 +13,18 @@ Date:   Mon Jun 21 15:52:53 2010 -0400
     init import
 ```
 
-##Current Status
+## Current Status
 
 Since then it's grown and changed and been modified a whole bunch of times (1525?).
 It's been a sloppy process, and seems like a drag.
 
-##The future
+## The future
 
 So I started re-writing it again, re-using as much as I felt comfortable with.
 
 It's far from complete, but I think it's a good start.
 
-##How to help
+## How to help
 
 Look for missing bits, syntax errors, incorrect spellings, or anything else that's not quite right.
 Submit an issue, or clone/fix/submit a PR!
