@@ -17,9 +17,13 @@ log files:
 
 OSSEC can monitor text based log files from syslog on unix and Linux systems, and `EventLog` or `EventChannel` log formats on Windows based systems.
 
-The `localfile` option can be used to monitor a log file. See the syntax for :ref:`syntax_localfile`.
+The `localfile` option can be used to monitor a log file.
+See the syntax for :ref:`syntax_localfile` for more information.
 
 commands:
 ^^^^^^^^^
 
+OSSEC is able to run commands on a system and monitor the output.
+
+See the syntax for :ref:`syntax_command` for more information..
 
