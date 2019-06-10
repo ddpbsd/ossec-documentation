@@ -11,5 +11,6 @@ OSSEC Manual
    authd
    agentless
    decoders
+   logmonitoring
    rules
 
