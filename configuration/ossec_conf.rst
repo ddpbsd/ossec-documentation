@@ -7,6 +7,7 @@ ossec.conf
 The configuration for OSSEC is mostly held in `ossec.conf`.
 It is written in loose XML, and consists of a number of sections.
 
+.. _syntax_global:
 
 global:
 -------
@@ -14,6 +15,8 @@ global:
 The `<global>` section is valid on Server and Local installations only.
 
 .. include:: global.trst
+
+.. _syntax_client:
 
 client:
 -------
@@ -23,12 +26,16 @@ The `<client>` section is valid on Agents only.
 
 .. include:: client.trst
 
+.. _syntax_remote:
+
 remote:
 -------
 
 Settings defining the configuration of `ossec-remoted` on the OSSEC management server.
 
 .. include:: remote.trst
+
+.. _syntax_syscheck:
 
 syscheck:
 ---------
@@ -40,6 +47,8 @@ have been marked as such.
 
 .. include:: syscheck.trst
 
+.. _syntax_rootcheck:
+
 rootcheck:
 ----------
 
@@ -47,12 +56,16 @@ Settings controlling the rootcheck functionality in OSSEC.
 
 .. include:: rootcheck.trst
 
+.. _syntax_localfile:
+
 localfile:
 ----------
 
 Settings specifying the location and format of logs for ingestion.
 
 .. include:: localfile.trst
+
+.. _syntax_rules:
 
 rules:
 ------
@@ -62,6 +75,8 @@ These settings are only valid on a Server or Local installation.
 
 .. include:: rules.trst
 
+.. _syntax_command:
+
 command:
 --------
 
@@ -69,11 +84,15 @@ Definitions for commands available to the active response system.
 
 .. include:: command.trst
 
+.. _syntax_active-response:
+
 active-response:
 ----------------
 
 
 .. include:: active-response.trst
+
+.. _syntax_alerts:
 
 alerts:
 -------
@@ -84,6 +103,7 @@ The `<alerts>` section is valid on Server and Local installations only.
 
 .. include:: alerts.trst
 
+.. _syntax_email_alerts:
 
 email_alerts:
 -------------
@@ -92,6 +112,8 @@ Settings for which alerts should trigger emails.
 
 .. include:: email_alerts.trst
 
+.. _syntax_syslog_output:
+
 syslog_output:
 --------------
 
@@ -99,6 +121,8 @@ OSSEC is able to forward alerts via syslog in a number of formats.
 These options are for use on a Server or Local installation.
 
 .. include:: syslog_output.trst
+
+.. _syntax_database_output:
 
 database_output:
 ----------------
@@ -112,12 +136,16 @@ These options are for use on a Server or Local installation.
 
 .. include:: database_output.trst
 
+.. _syntax_agentless:
+
 agentless:
 ----------
 
 Configures scripts to be run against systems where an agent cannot be installed.
 
 .. include:: agentless.trst
+
+.. _syntax_reports:
 
 reports:
 --------
