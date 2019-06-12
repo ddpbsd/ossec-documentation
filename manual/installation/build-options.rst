@@ -1,11 +1,14 @@
 .. _installation_build-options:
 
+==============
 Build Options:
 ==============
 
 OSSEC has a number of options that can be set or changed at build time.
 These options can change the behavior or resource utilization by the OSSEC processes.
 
+Required:
+=========
 
 TARGET:
 ^^^^^^^
@@ -32,35 +35,85 @@ This is set during the compilation, either through the `install.sh` script or ma
    - **winagent:** Windows Agent
 
 Optional:
-^^^^^^^^^
+=========
 
 A number of options are set in the `Makefile`, but can be modified at compile time.
 
-**Available options:**
+ZLIB_SYSTEM:
+^^^^^^^^^^^^
+   If set to `yes` the system installed zlib will be used
 
-   - **ZLIB_SYSTEM:** If set to `yes` the system installed zlib will be used
+   *Default:* yes
 
-   - **PCRE2_SYSTEM:** If set to `yes` the system installed pcre2 will be used
+PCRE2_SYSTEM:
+^^^^^^^^^^^^^
 
-   - **LUA_ENABLE:** Enable building lua
+   If set to `yes` the system installed pcre2 will be used
 
-   - **MAXAGENTS:** The maximum number of supported agents
+   *Default:* no
 
-   - **USE_PRELUDE:** Enable forwarding alerts to Prelude-IDS
+LUA_ENABLE:
+^^^^^^^^^^^
 
-   - **USE_ZEROMQ:** Enable forwarding events via ZeroMQ
+   If set to `yes` the installation process will build lua
 
-   - **USE_GEOIP:** Enable Lookups against the GeoIP database
+   *Default:* no
 
-   - **USE_INOTIFY:** Enable realtime support in `syscheck` via `inotify` in Linux
+MAXAGENTS:
+^^^^^^^^^^
 
-   - **USE_PCRE2_JIT:** Enable the use of pcre2 JIT, must be supported by the installed pcre2
+   The maximum number of supported agents
 
-   - **REUSE_ID:** XXX 
+   *Default:* 2048
+
+USE_PRELUDE:
+^^^^^^^^^^^^
+
+   Enable forwarding alerts to Prelude-IDS
+
+   *Default:* no
+
+USE_ZEROMQ:
+^^^^^^^^^^^
+
+   Enable forwarding events via ZeroMQ
+
+   *Default:* no
+
+USE_GEOIP:
+^^^^^^^^^^
+
+   Enable Lookups against the GeoIP database
+
+   *Default:* no
+
+USE_INOTIFY:
+^^^^^^^^^^^^
+
+   Enable realtime support in `syscheck` via `inotify` in Linux
+
+   *Default:* enabled on Linux and Windows, disabled on other operating systems
+
+USE_PCRE2_JIT:
+^^^^^^^^^^^^^^
+
+   Enable the use of pcre2 Just In Time (JIT) support.
+   If the installation process compiles PCRE2 this will be enabled.
+   If the system installed PCRE2 is used, it must support JIT if this is enabled.
+
+   *Default:* yes
+
+REUSE_ID: 
+^^^^^^^^^
+
+   Allow `authd` to re-use agent IDs
+
+   *Default:* no
 
 Settings:
 ^^^^^^^^^
 
+A listing of the default settings.
 
 .. code-block:: console
 
