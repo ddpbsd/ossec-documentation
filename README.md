@@ -29,4 +29,11 @@ It's far from complete, but I think it's a good start.
 Look for missing bits, syntax errors, incorrect spellings, or anything else that's not quite right.
 Submit an issue, or clone/fix/submit a PR!
 
+## TODO
+
+* Examples!
+
+* Fill out the manual bits.
+
+* Walkthrough
 
