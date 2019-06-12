@@ -33,3 +33,11 @@ The command output can be monitored for content directly, or for changes between
 
 See the syntax for :ref:`syntax_command` for more information..
 
+syslog:
+^^^^^^^
+
+OSSEC is able to receive syslog messages from systems that cannot have an agent installed on them.
+This insludes many network devices like routers, firewalls, and switches.
+
+See the :ref:`syntax_remote` documentation for more information.
+
