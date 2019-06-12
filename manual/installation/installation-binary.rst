@@ -1,5 +1,6 @@
 .. _installation_installation-binary:
 
+=========================================
 Compiling OSSEC for a Binary Installation 
 =========================================
 

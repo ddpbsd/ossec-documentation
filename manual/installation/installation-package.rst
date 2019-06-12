@@ -1,6 +1,6 @@
 .. _installation_installation-package:
 
-
+====================
 Package Installation
 ====================
 

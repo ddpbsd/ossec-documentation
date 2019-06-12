@@ -1,5 +1,6 @@
 .. _installation_types:
 
+==================
 Installation Types
 ==================
 

@@ -1,7 +1,8 @@
 .. _installation_install-source:
 
-Install from source:
-====================
+===================
+Install from source
+===================
 
 For source installations the `install.sh` script will ask questions about the installation,
 compile, and install the necessary files and users.

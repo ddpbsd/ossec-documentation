@@ -1,5 +1,6 @@
 .. _installation_compile-ossec-mingw: 
 
+==============================
 Compiling OSSEC 3.x with MinGW
 ==============================
 
