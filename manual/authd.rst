@@ -1,6 +1,6 @@
 .. _manual_authd:
 
-
+===========
 ossec-authd
 ===========
 

@@ -1,5 +1,6 @@
 .. _manual_logmonitoring:
 
+==============
 Log Monitoring
 ==============
 
