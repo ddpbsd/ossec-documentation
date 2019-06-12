@@ -1,5 +1,6 @@
 .. _about_supported:
 
+=================
 Supported Systems
 =================
 
@@ -48,4 +49,11 @@ Using OSSEC agentless options, the following systems are also supported (for log
    - SonicWall firewall (all versions)
    - Checkpoint firewall (all versions)
    - All operating systems specified in the “operating systems” section
+
+Notes about support:
+^^^^^^^^^^^^^^^^^^^^
+
+The OSSEC project is made up of volunteers, mostly working on the project in their free time.
+Some systems will be harder to support due to availability.
+While we may all want a spare AIX or HP-UX system in our network closets, it's a luxury not all of us can afford.
 

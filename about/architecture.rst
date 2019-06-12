@@ -1,5 +1,6 @@
 .. _about_architecture:
 
+==================
 OSSEC Architecture
 ==================
 
