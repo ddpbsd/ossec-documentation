@@ -1,0 +1,36 @@
+.. add_agent:
+
+Adding an agent:
+^^^^^^^^^^^^^^^^
+
+The menu interface for `manage_agents`
+
+.. code-block:: console
+
+
+   # /var/ossec/bin/manage_agents
+
+   ****************************************
+   * OSSEC HIDS v3.2.0 Agent manager.     *
+   * The following options are available: *
+   ****************************************
+      (A)dd an agent (A).
+      (E)xtract key for an agent (E).
+      (L)ist already added agents (L).
+      (R)emove an agent (R).
+      (Q)uit.
+   Choose your action: A,E,L,R or Q:
+
+
+Typing `a` or `A` will provide prompts for information about the agent.
+
+When adding an agent, `manage_agents` will prompt for information about the agent.
+This information includes an ID, name, and IP address.
+Each entry should be unique. Duplicating information will cause issues with agents connecting to the server.
+
+The ID is a number, starting with 1. This ID is used by OSSEC for configuration.
+The name of the agent can also be used in a number of configuration options.
+The IP address should be the IP address the OSSEC server will see from the agent.
+Instead of a specific IP address a CIDR address can be used for DHCP ranges or `any` can be used if the IP is not known (dhcp from an ISP).
+
+After the first agent is added, the OSSEC server processes should be restarted.

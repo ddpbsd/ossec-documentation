@@ -7,7 +7,7 @@ OSSEC Manual
 .. toctree::
 
    installation/index
-   addagent
+   agentmanagement/index
    authd
    agentless
    decoders

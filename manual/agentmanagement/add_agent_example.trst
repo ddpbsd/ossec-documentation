@@ -1,0 +1,78 @@
+.. _add_agent_example:
+
+Adding an agent example:
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+   ****************************************
+   * OSSEC HIDS v3.2.0 Agent manager.     *
+   * The following options are available: *
+   ****************************************
+      (A)dd an agent (A).
+      (E)xtract key for an agent (E).
+      (L)ist already added agents (L).
+      (R)emove an agent (R).
+      (Q)uit.
+   Choose your action: A,E,L,R or Q: a
+
+   - Adding a new agent (use '\q' to return to the main menu).
+     Please provide the following:
+      * A name for the new agent: ^C
+   manage_agents: Exiting.
+   ix# /var/ossec/bin/manage_agents
+
+
+   ****************************************
+   * OSSEC HIDS v3.2.0 Agent manager.     *
+   * The following options are available: *
+   ****************************************
+      (A)dd an agent (A).
+      (E)xtract key for an agent (E).
+      (L)ist already added agents (L).
+      (R)emove an agent (R).
+      (Q)uit.
+   Choose your action: A,E,L,R or Q: A
+
+   - Adding a new agent (use '\q' to return to the main menu).
+     Please provide the following:
+      * A name for the new agent: test
+      * The IP Address of the new agent: 10.10.10.10
+      * An ID for the new agent[1025]:
+   Agent information:
+      ID:1025
+      Name:test
+      IP Address:10.10.10.10
+
+   Confirm adding it?(y/n): y
+   Agent added with ID 1025
+
+
+After the agent is added, its key can be extracted with `E` at the menu.
+
+.. code-block:: console
+
+   ****************************************
+   * OSSEC HIDS v3.2.0 Agent manager.     *
+   * The following options are available: *
+   ****************************************
+      (A)dd an agent (A).
+      (E)xtract key for an agent (E).
+      (L)ist already added agents (L).
+      (R)emove an agent (R).
+      (Q)uit.
+   Choose your action: A,E,L,R or Q: e
+
+   Available agents:
+      ID: 010, Name: public, IP: 192.168.17.12
+      ID: 1024, Name: junction.example.com, IP: any
+      ID: 1025, Name: test, IP: 10.10.10.10
+   Provide the ID of the agent to extract the key (or '\q' to quit): 1025
+
+   Agent key information for '1025' is:
+   MTAyNSB0ZXN0IDEwLjEwLjEwLjEwIDQ3ZDFkOGFiMzU5OWRiNDkyNTU4NjkzOGNiYTY4YTM5NmMwNmIwZmJkOTY3YWVjMmUzNzU4NWYzOGM4MmRmNTY=
+
+   ** Press ENTER to return to the main menu.
+
+This key can be added to an agent to associate it with a manager.
+
