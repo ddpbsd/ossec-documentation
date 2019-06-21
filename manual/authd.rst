@@ -1,9 +1,0 @@
-.. _manual_authd:
-
-===========
-ossec-authd
-===========
-
-Instead of adding agents manually, `ossec-authd` can be used.
-
-
