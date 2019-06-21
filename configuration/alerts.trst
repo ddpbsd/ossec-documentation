@@ -2,8 +2,8 @@
 
 .. _alerts_email_alert_level:
 
-email_alert_level:
-^^^^^^^^^^^^^^^^^^
+email_alert_level
+^^^^^^^^^^^^^^^^^
 
    Minimum alert level for email notification.
 
@@ -19,8 +19,8 @@ email_alert_level:
 
 .. _alerts_log_alert_level:
 
-log_alert_level:
-^^^^^^^^^^^^^^^^
+log_alert_level
+^^^^^^^^^^^^^^^
 
    Minimum alert level to record an alert in `alerts.log`.
 
@@ -30,14 +30,12 @@ log_alert_level:
 
 .. _alerts_use_geoip:
 
-use_geoip:
-^^^^^^^^^^
+use_geoip
+^^^^^^^^^
 
    Enable or disable GeoIP lookups.
 
    **Default:** no
 
    **Allowed:** yes/no
-
-
 

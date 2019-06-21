@@ -35,8 +35,8 @@ Manager/Agent Installation
         $ sudo /var/ossec/bin/ossec-control start  
 
 
-Manual Installation:
-^^^^^^^^^^^^^^^^^^^^
+Manual Installation
+^^^^^^^^^^^^^^^^^^^
 
 OSSEC can also be installed in a more manual fashion without the use of `install.sh`.
 This installation method requires manual configuration of the `ossec.conf` file.

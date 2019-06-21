@@ -2,8 +2,8 @@
 
 .. _email_alerts_email_to:
 
-email_to:
-^^^^^^^^^
+email_to
+^^^^^^^^
 
    The recipient address of alert emails.
 
@@ -11,8 +11,8 @@ email_to:
 
 .. _email_alerts_level:
 
-level:
-^^^^^^
+level
+^^^^^
 
    The minimum alert level for an email.
 
@@ -24,8 +24,8 @@ level:
 
 .. _email_alerts_group:
 
-group:
-^^^^^^
+group
+^^^^^
 
    Specifies a group that an alert must match for an email to be sent.
    Multiple groups can be specified with a pipe (`|`) character.
@@ -34,8 +34,8 @@ group:
 
 .. _email_alerts_event_location:
 
-event_location:
-^^^^^^^^^^^^^^^
+event_location
+^^^^^^^^^^^^^^
 
    An alert must match this `event_location` for an email to be sent.
    Only one `event_location` may be specified, the last entry will be used.
@@ -44,8 +44,8 @@ event_location:
 
 .. _email_alerts_format:
 
-format:
-^^^^^^^
+format
+^^^^^^
 
    .. warning:
 
@@ -60,8 +60,8 @@ format:
 
 .. _email_alerts_rule_id:
 
-rule_id:
-^^^^^^^^
+rule_id
+^^^^^^^
 
    Option to send granular emails based on the rule id.
 
@@ -69,8 +69,8 @@ rule_id:
 
 .. _email_alerts_do_not_delay:
 
-do_not_delay:
-^^^^^^^^^^^^^
+do_not_delay
+^^^^^^^^^^^^
 
    Option to send the email immediately.
 
@@ -82,8 +82,8 @@ do_not_delay:
 
 .. _email_alerts_do_not_group:
 
-do_not_group:
-^^^^^^^^^^^^^
+do_not_group
+^^^^^^^^^^^^
 
    Option to not group alerts in an email.
 

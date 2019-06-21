@@ -7,8 +7,8 @@ Compiling OSSEC 3.x with MinGW
 OSSEC's Windows agent is compiled on Linux using `MinGW <http://www.mingw.org/>`_
 
 
-Requirements:
-^^^^^^^^^^^^^
+Requirements
+^^^^^^^^^^^^
 
 * `MinGW <http://www.mingw.org/>`_
 
@@ -20,8 +20,8 @@ Requirements:
 
 * PCRE2 source tree in `src/external`
 
-Compilation:
-^^^^^^^^^^^^
+Compilation
+^^^^^^^^^^^
 
 Change directory to the src directory:
 

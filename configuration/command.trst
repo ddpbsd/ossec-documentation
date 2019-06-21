@@ -2,31 +2,31 @@
 
 .. _command_name:
 
-name:
-^^^^^
+name
+^^^^
 
    Specifies the name of the command.
 
 .. _command_executable:
 
-executable:
-^^^^^^^^^^^
+executable
+^^^^^^^^^^
 
    Specifies the executable to be run.
    The executable must be a file (with exec permissions) inside `active-response/bin` relative to the OSSEC install location.
 
 .. _command_expect:
 
-expect:
-^^^^^^^
+expect
+^^^^^^
 
    Specifies the information gathered from a log via decoding to send to the command.
    Common options are `srcip` and `username`.
 
 .. _command_timeout_allowed:
 
-timeout_allowed:
-^^^^^^^^^^^^^^^^
+timeout_allowed
+^^^^^^^^^^^^^^^
 
    Specifies if the command supports a timeout.
    After the timeout period the command will attempt to reverse changes it has made (delete firewall rules or entries in `hosts.deny`).

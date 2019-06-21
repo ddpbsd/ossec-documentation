@@ -20,8 +20,8 @@ compilers or development packages.
 
 .. _manual-install-binary-build: 
 
-Compiling OSSEC for install on a second server:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Compiling OSSEC for install on a second server
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 First download the OSSEC package corresponding to the version you want to 
 install and extract it on the build system.
@@ -48,8 +48,8 @@ Finally create an OSSEC package.
 
 .. _manual-install-binary-install: 
 
-Installation of the binary OSSEC package:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Installation of the binary OSSEC package
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 On the target system (that does not have a C compiler) download your ossec-binary.tar 
 created in the steps above. 

@@ -4,28 +4,28 @@
 OSSEC Architecture
 ==================
 
-Linux and unix-like systems:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Linux and unix-like systems
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 OSSEC runs as multiple processes, the exact number differing between agent, server, and local installations.
 Most processes communicates through unix sockets under the `queue` directory inside of the OSSEC installation location.
 When possible the OSSEC processes run with limited privileges and chroot to the install location.
 This is modeled after the `Privilege Separation tehniques <https://www.openbsd.org/papers/auug04/mgp00030.html>`_ used in OpenBSD.
 
-Windows:
-^^^^^^^^
+Windows
+^^^^^^^
 
 OSSEC runs as a single service.
 
-Agent/Server Communication:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Agent/Server Communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The OSSEC server listens on 1514/udp via `ossec-remoted`.
 Agents send messages to the server via `ossec-agentd`.
 The communication is two-way, but initiated by the agent.
 
-Agentless and Network Devices:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Agentless and Network Devices
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 OSSEC has the ability to communicate with systems that cannot have the agent software installed.
 This is typically done through SSH, and a few pre-made `Expect <https://core.tcl.tk/expect/index>`_
@@ -34,8 +34,8 @@ scripts are provided for a number of systems.
 In addition to the agentless support, OSSEC can receive syslog messages from any number of devices and process them as if the
 messages were delivered via an agent.
 
-User List:
-^^^^^^^^^^
+User List
+^^^^^^^^^
 
 +--------+---------------------------------------------------+
 | User   | Process                                           |
@@ -49,8 +49,8 @@ User List:
 | ossecm | ossec-maild, ossec-csyslogd                       |
 +--------+---------------------------------------------------+
 
-Process List:
-^^^^^^^^^^^^^
+Process List
+^^^^^^^^^^^^
 
 +--------------------+--------------------------------------------------------------------------------+---------------------+
 | Process            | Description                                                                    | Install Type        |

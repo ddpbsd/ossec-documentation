@@ -15,8 +15,8 @@ The `agent.conf` file (and the contents of `/var/ossec/etc/shared`) will be push
 Many of the configuration options in the `ossec.conf` can be placed in teh agent.conf.
 If the `agent.conf` is modified, the agent will have to be restarted for the changes to take effect.
 
-Minimal ossec.conf:
-^^^^^^^^^^^^^^^^^^^
+Minimal ossec.conf
+^^^^^^^^^^^^^^^^^^
 
 At a minimum, the `<client>` section is necessary.
 Without this, the agent does not know how to communicate with the server.
@@ -30,8 +30,8 @@ Minimal `ossec.conf` example:
      <server-hostname>ossec.example.com</server-hostname>
    </client>
 
-Settings that will not work:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Settings that will not work
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 By default the OSSEC agent will not run commands from an `agent.conf`.
 Any `<localfile>` options that require `command` or `full_command` should be configured in the agent's `ossec.conf.`

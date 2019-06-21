@@ -2,8 +2,8 @@
 
 .. _syscheck_directories:
 
-directories:
-^^^^^^^^^^^^
+directories
+^^^^^^^^^^^
 
    The `<directories>` option specifies which directories `ossec-syscheckd` will monitor.
    Multiple directories can be specified per instance, separated with a comma. 
@@ -95,8 +95,8 @@ directories:
 
 .. _syscheck_ignore:
 
-ignore:
-^^^^^^^
+ignore
+^^^^^^
 
    List of files or directories to be ignored.
    One entry per instance of `ignore`.
@@ -114,8 +114,8 @@ ignore:
 
 .. _syscheck_frequency:
 
-frequency:
-^^^^^^^^^^
+frequency
+^^^^^^^^^
 
    The frequency at which full system scans will be performed (in seconds).
    Frequency should be no lower than 300 seconds, and larger for larger groups of files.
@@ -126,8 +126,8 @@ frequency:
 
 .. _syscheck_nodiff:
 
-nodiff:
-^^^^^^^
+nodiff
+^^^^^^
 
    .. versionadded:: 3.0
 
@@ -143,8 +143,8 @@ nodiff:
 
 .. _syscheck_scantime:
 
-scantime:
-^^^^^^^^^
+scantime
+^^^^^^^^
 
    Time to run the scans (can be in the formats of 21pm, 8:30, 12am, etc).
 
@@ -156,8 +156,8 @@ scantime:
 
 .. _syscheck_scan_day:
 
-scan_day:
-^^^^^^^^^
+scan_day
+^^^^^^^^
 
    Day of the week to run the scans.
 
@@ -165,8 +165,8 @@ scan_day:
 
 .. _syscheck_auto_ignore:
 
-auto_ignore:
-^^^^^^^^^^^^
+auto_ignore
+^^^^^^^^^^^
 
    After 3 changes to a file, further changes to a file will be ignored.
    Setting `auto_ignore` to `no` will disable this.
@@ -179,8 +179,8 @@ auto_ignore:
 
 .. _syscheck_alert_new_files:
 
-alert_new_files:
-^^^^^^^^^^^^^^^^
+alert_new_files
+^^^^^^^^^^^^^^^
 
    By default syscheck will not trigger an alert on file creation.
    Setting `alert_new_files` to `yes` will make it do so.
@@ -197,8 +197,8 @@ alert_new_files:
 
 .. _syscheck_scan_on_start:
 
-scan_on_start:
-^^^^^^^^^^^^^^
+scan_on_start
+^^^^^^^^^^^^^
 
    Controls whether `ossec-syscheckd` will perform a full scan when it is started.
 
@@ -208,8 +208,8 @@ scan_on_start:
 
 .. _syscheck_windows_registry:
 
-windows_registry:
-^^^^^^^^^^^^^^^^^
+windows_registry
+^^^^^^^^^^^^^^^^
 
    Specifies entries to be monitored in the Windows registry.
    One entry per instance of this options.
@@ -223,8 +223,8 @@ windows_registry:
 
 .. _syscheck_registry_ignore:
 
-registry_ignore:
-^^^^^^^^^^^^^^^^
+registry_ignore
+^^^^^^^^^^^^^^^
 
    List of registry entries to be ignore.
    One entry per instance of this option.
@@ -234,8 +234,8 @@ registry_ignore:
 
 .. _syscheck_prefilter_cmd:
 
-prefilter_cmd:
-^^^^^^^^^^^^^^
+prefilter_cmd
+^^^^^^^^^^^^^
 
    Command to run to prevent prelinking from creating false positives.
 
@@ -252,8 +252,8 @@ prefilter_cmd:
 
 .. _syscheck_skip_nfs:
 
-skip_nfs:
-^^^^^^^^^
+skip_nfs
+^^^^^^^^
 
    .. versionadded:: 2.9.0
 

@@ -2,8 +2,8 @@
 
 .. _rules_include:
 
-include:
-^^^^^^^^
+include
+^^^^^^^
 
    Load a single rule file.
    The rule files are stored in `rules/`, relative to the install location of OSSEC.
@@ -12,8 +12,8 @@ include:
 
 .. _rules_rule:
 
-rule:
-^^^^^
+rule
+^^^^
 
    Load a single rule file.
 
@@ -23,8 +23,8 @@ rule:
 
 .. rules_rule_dir:
 
-rule_dir:
-^^^^^^^^^
+rule_dir
+^^^^^^^^
 
    Specifies a directory containing rule files.
    The rule files will be loaded alphebetically.
@@ -39,8 +39,8 @@ rule_dir:
 
 .. _rules_decoder:
 
-decoder:
-^^^^^^^^
+decoder
+^^^^^^^
 
    Specifies the path to a decoder file to be used by `ossec-analysisd`.
    If no decoders are specified in the `ossec.conf` the default `etc/decoder.xml` and `etc/local_decoder.xml` are used.
@@ -50,8 +50,8 @@ decoder:
 
 .. _rules_decoder_dir:
 
-decoder_dir:
-^^^^^^^^^^^^
+decoder_dir
+^^^^^^^^^^^
 
    Specifies the path to a directory containing decoder files.
    Files will be loaded in alphebetical order.
@@ -66,8 +66,8 @@ decoder_dir:
 
 .. _rules_list:
 
-list:
-^^^^^
+list
+^^^^
 
    Specifies a single cdb reference for inclusion by other rules.
    File extensions should not be included.

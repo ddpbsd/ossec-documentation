@@ -9,8 +9,8 @@ Windows Agent Installation
    OSSEC only supports Windows systems as agents, and they
    will require an OSSEC server to function.
 
-OSSEC Windows executable:
-^^^^^^^^^^^^^^^^^^^^^^^^^
+OSSEC Windows executable
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Download the executable named Agent Windows from https://ossec.net/downloads.html. 
 Run through the install wizard with all defaults. 
@@ -19,8 +19,8 @@ The IP address of the server and the agent key can be pasted into the OSSEC Agen
 
 The OSSEC service can be restarted via the Manage tab.
 
-Chocolatey:
-^^^^^^^^^^^
+Chocolatey
+^^^^^^^^^^
 
 `Chocolatey <https://chocolatey.org/>`_ is a package manager for Windows. It offers an OSSEC package.
 

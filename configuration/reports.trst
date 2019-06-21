@@ -2,75 +2,75 @@
 
 .. _reports_group:
 
-group:
-^^^^^^
+group
+^^^^^
 
    Filter by group or category.
 
 .. _reports_categories:
 
-categories:
-^^^^^^^^^^^
+categories
+^^^^^^^^^^
 
    Filter by group or category.
    This is the same as the group option above.
 
 .. _reports_rule:
 
-rule:
-^^^^^
+rule
+^^^^
 
    Filter on a specific Rule ID.
 
 .. _reports_level:
 
-level:
-^^^^^^
+level
+^^^^^
 
    Filter by minimum rule level. 
 
 .. _reports_location:
 
-location:
-^^^^^^^^^
+location
+^^^^^^^^
 
    Filter by the log location or agent name.
 
 .. _reports_srcip:
 
-srcip:
-^^^^^^
+srcip
+^^^^^
 
    Filter by the source ip recorded in an alert.
 
 .. _reports_user:
 
-user:
-^^^^^
+user
+^^^^
 
    Filter by the user name in an alert.
    This will match both `srcuser` and `dstuser`.
 
 .. _reports_title:
 
-title:
-^^^^^^
+title
+^^^^^
 
    Specify the title of the report.
    This is a required option.
 
 .. _reports_email_to:
 
-email_to:
-^^^^^^^^^
+email_to
+^^^^^^^^
 
    The email address the completed report is sent to.
    This is a required option.
 
 .. _reports_showlogs:
 
-showlogs:
-^^^^^^^^^
+showlogs
+^^^^^^^^
 
    If `showlogs` is set to `yes` the relevant logs will be included in the report.
    This is set to `no` by default.

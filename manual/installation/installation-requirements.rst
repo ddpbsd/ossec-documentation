@@ -9,8 +9,8 @@ OpenSSL is a suggested, but optional, prerequisite.
 However, you always have the option to pre-compile
 it on one system and move the binaries to the final box.
 
-PCRE2:
-^^^^^^
+PCRE2
+^^^^^
 
 .. versionadded:: 3.3
 
@@ -39,8 +39,8 @@ If the system's PCRE2 library is used, verify that JIT is enabled. If it is not,
 
    # PCRE2_SYSTEM=yes USE_PCRE2_JIT=no ./install.sh
 
-zlib:
-^^^^^
+zlib
+^^^^
 
 `zlib <https://www.zlib.net/>`_ is included with OSSEC in `src/external/zlib-1.2.11`. In previous
 versions this included version was used by default during the build process, but this changed to 
@@ -53,8 +53,8 @@ To use the included version of zlib, simply set `ZLIB_SYSTEM` to `no`:
    # cd ossec-hids-*
    # ZLIB_SYSTEM=no ./install.sh
 
-Ubuntu:
-^^^^^^^
+Ubuntu
+^^^^^^
 
 On Ubuntu you will need the *build-essential* package in order to
 compile and install OSSEC.
@@ -87,8 +87,8 @@ To use the SQLite features, the `libsqlite3-dev` package is necessary.
    # apt-get install libsqlite3-dev
 
 
-RedHat/CentOS:
-^^^^^^^^^^^^^^
+RedHat/CentOS
+^^^^^^^^^^^^^
 
 RedHat should have most of the packages needed by default. The zlib development package
 should be installed:
@@ -118,8 +118,8 @@ To use the SQLite features, the `sqlite-devel` package is necessary.
 
    # yum install sqlite-devel
 
-OpenSuse:
-^^^^^^^^^
+OpenSuse
+^^^^^^^^
 
 The zlib development package should be installed:
 
@@ -140,8 +140,8 @@ need to be installed.
 
    # zypper install postgresql-devel mysql-devel
 
-Debian:
-^^^^^^^
+Debian
+^^^^^^
 
 .. warning::
 
@@ -171,14 +171,13 @@ This can also be avoided by using bash to run ``install.sh``:
 
    # bash ./install.sh
 
-OpenBSD:
-^^^^^^^^
+OpenBSD
+^^^^^^^
 
 *TBD*
 
-FreeBSD:
-^^^^^^^^
+FreeBSD
+^^^^^^^
 
 *TBD*
-
 

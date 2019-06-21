@@ -7,8 +7,8 @@ Package Installation
 The OSSEC project has made RPM and deb packages available.
 Links to the packages can be found on the OSSEC `download page <http://www.ossec.net/?page_id=19>`_
 
-RPM Installation:
-^^^^^^^^^^^^^^^^^
+RPM Installation
+^^^^^^^^^^^^^^^^
 
 OSSEC's RPMs are made available by `AtomiCorp <http://www.atomicorp.com>`_.
 
@@ -31,8 +31,8 @@ And for an agent run:
    # yum install ossec-hids ossec-hids-agent
 
 
-Deb Installation:
-^^^^^^^^^^^^^^^^^
+Deb Installation
+^^^^^^^^^^^^^^^^
 
 Atomicorp provides `.deb` installation packages as well.
 
@@ -66,8 +66,8 @@ Or install OSSEC HIDS agent:
 
     # apt-get install ossec-hids-agent
 
-FreeBSD Ports:
-^^^^^^^^^^^^^^
+FreeBSD Ports
+^^^^^^^^^^^^^
 
 *TBD*
 

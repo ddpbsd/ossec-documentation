@@ -5,8 +5,8 @@ Supported Systems
 =================
 
 
-Operating Systems:
-^^^^^^^^^^^^^^^^^^
+Operating Systems
+^^^^^^^^^^^^^^^^^
 
 The following operating systems are supported by the OSSEC agent:
 
@@ -21,8 +21,8 @@ The following operating systems are supported by the OSSEC agent:
    - Mac OS X 10.x
    - HP-UX 11
 
-Devices Supported via Syslog:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Devices Supported via syslog
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 These systems/devices are also supported via remote syslog:
 
@@ -50,8 +50,8 @@ Using OSSEC agentless options, the following systems are also supported (for log
    - Checkpoint firewall (all versions)
    - All operating systems specified in the “operating systems” section
 
-Notes about support:
-^^^^^^^^^^^^^^^^^^^^
+Notes about support
+^^^^^^^^^^^^^^^^^^^
 
 The OSSEC project is made up of volunteers, mostly working on the project in their free time.
 Some systems will be harder to support due to availability.

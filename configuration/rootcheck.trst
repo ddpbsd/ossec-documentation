@@ -2,8 +2,8 @@
 
 .. _rootcheck_base_directory:
 
-base_directory:
-^^^^^^^^^^^^^^^
+base_directory
+^^^^^^^^^^^^^^
 
    The base path prepended to a number of options.
    Usually the installation path for OSSEC.
@@ -22,8 +22,8 @@ base_directory:
 
 .. _rootcheck_rootkit_files:
 
-rootkit_files:
-^^^^^^^^^^^^^^
+rootkit_files
+^^^^^^^^^^^^^
 
    Specifies the location of the rootkit files database.
 
@@ -33,8 +33,8 @@ rootkit_files:
 
 .. _rootcheck_rootkit_trojans:
 
-rootkit_trojans:
-^^^^^^^^^^^^^^^^
+rootkit_trojans
+^^^^^^^^^^^^^^^
 
    Specifies the location of the rootkit trojans database.
 
@@ -44,8 +44,8 @@ rootkit_trojans:
 
 .. _rootcheck_windows_audit:
 
-windows_audit:
-^^^^^^^^^^^^^^
+windows_audit
+^^^^^^^^^^^^^
 
    Specifies the location of the Windows audit database.
 
@@ -55,8 +55,8 @@ windows_audit:
 
 .. _rootcheck_system_audit:
 
-system_audit:
-^^^^^^^^^^^^^
+system_audit
+^^^^^^^^^^^^
 
    Specifies the location of the system audit database.
    One entry per instance of this option.
@@ -70,8 +70,8 @@ system_audit:
 
 .. _rootcheck_windows_apps:
 
-windows_apps:
-^^^^^^^^^^^^^
+windows_apps
+^^^^^^^^^^^^
 
    Specifies the location of the Windows application audit database.
 
@@ -81,8 +81,8 @@ windows_apps:
 
 .. _rootcheck_windows_malware:
 
-windows_malware:
-^^^^^^^^^^^^^^^^
+windows_malware
+^^^^^^^^^^^^^^^
 
    Specifies the location of the Windows malware database.
 
@@ -92,8 +92,8 @@ windows_malware:
 
 .. _rootcheck_scanall:
 
-scanall:
-^^^^^^^^
+scanall
+^^^^^^^
 
    Can force rootcheck to scan the entire system.
    This may trigger false positives.
@@ -108,8 +108,8 @@ scanall:
 
 .. _rootcheck_frequency:
 
-frequency:
-^^^^^^^^^^
+frequency
+^^^^^^^^^
 
    Frequency (in seconds) between rootcheck scans.
 
@@ -119,8 +119,8 @@ frequency:
 
 .. _rootcheck_disabled:
 
-disabled:
-^^^^^^^^^
+disabled
+^^^^^^^^
 
    Disable the rootcheck functionality.
 
@@ -130,8 +130,8 @@ disabled:
 
 .. _rootcheck_check_dev:
 
-check_dev:
-^^^^^^^^^^
+check_dev
+^^^^^^^^^
 
    Enable or disable checking for files in `/dev`.
 
@@ -141,8 +141,8 @@ check_dev:
 
 .. _rootcheck_check_files:
 
-check_files:
-^^^^^^^^^^^^
+check_files
+^^^^^^^^^^^
 
    Enable or disable checks based on the rootkit files.
 
@@ -156,8 +156,8 @@ check_files:
 
 .. _rootcheck_check_if:
 
-check_if:
-^^^^^^^^^
+check_if
+^^^^^^^^
 
    Enable or disable checking the network interfaces.
 
@@ -167,8 +167,8 @@ check_if:
 
 .. _rootcheck_check_pids:
 
-check_pids:
-^^^^^^^^^^^
+check_pids
+^^^^^^^^^^
 
    Enable or disable checking process IDs.
 
@@ -178,8 +178,8 @@ check_pids:
 
 .. _rootcheck_check_ports:
 
-check_ports:
-^^^^^^^^^^^^
+check_ports
+^^^^^^^^^^^
 
    Enable or disable checking network ports.
 
@@ -189,8 +189,8 @@ check_ports:
 
 .. _rootcheck_check_sys:
 
-check_sys:
-^^^^^^^^^^
+check_sys
+^^^^^^^^^
 
    Enable or disable checking the filesystem.
 
@@ -204,8 +204,8 @@ check_sys:
 
 .. _rootcheck_check_trojans:
 
-check_trojans:
-^^^^^^^^^^^^^^
+check_trojans
+^^^^^^^^^^^^^
 
    Enable or disable checking for trojans.
 
@@ -215,8 +215,8 @@ check_trojans:
 
 .. _rootcheck_check_unixaudit:
 
-check_unixaudit:
-^^^^^^^^^^^^^^^^
+check_unixaudit
+^^^^^^^^^^^^^^^
 
    Enable or disable checking for unix issues.
 
@@ -226,8 +226,8 @@ check_unixaudit:
 
 .. _rootcheck_check_winapps:
 
-check_winapps:
-^^^^^^^^^^^^^^
+check_winapps
+^^^^^^^^^^^^^
 
    Enable or disable checking Windows applications.
 
@@ -237,8 +237,8 @@ check_winapps:
 
 .. _rootcheck_check_winaudit:
 
-check_winaudit:
-^^^^^^^^^^^^^^^
+check_winaudit
+^^^^^^^^^^^^^^
 
    Enable or disable checking Windows audit.
 
@@ -248,8 +248,8 @@ check_winaudit:
 
 .. _rootcheck_check_winmalware:
 
-check_winmalware:
-^^^^^^^^^^^^^^^^^
+check_winmalware
+^^^^^^^^^^^^^^^^
 
    Enable or disable checking Windows malware.
 
@@ -259,8 +259,8 @@ check_winmalware:
 
 .. _rootcheck_skip_nfs:
 
-skip_nfs:
-^^^^^^^^^
+skip_nfs
+^^^^^^^^
 
    .. versionadded:: 2.9.0
 

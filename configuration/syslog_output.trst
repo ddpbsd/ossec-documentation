@@ -2,51 +2,51 @@
 
 .. _syslog_output_server:
 
-server:
-^^^^^^^
+server
+^^^^^^
 
    Specifies the IP address of the syslog server.
 
 .. _syslog_output_port:
 
-port:
-^^^^^
+port
+^^^^
 
    Specifies the port of the syslog server.
 
 .. _syslog_output_level:
 
-level:
-^^^^^^
+level
+^^^^^
 
    Specifies the minimum alert level for alerts to be forwarded.
 
 .. _syslog_output_group:
 
-group:
-^^^^^^
+group
+^^^^^
 
    Alerts belonging to the configured group will be forwarded.
    Multiple groups can be specified, separated with the pipe (`|`) character.
 
 .. _syslog_output_rule_id:
 
-rule_id:
-^^^^^^^^
+rule_id
+^^^^^^^
 
    Alerts matching the configured rule ID will be forwarded.
 
 .. _syslog_output_location:
 
-location:
-^^^^^^^^^
+location
+^^^^^^^^
 
    Alerts from this location will be forwarded.
 
 .. _syslog_output_usq_fqdn:
 
-use_fqdn:
-^^^^^^^^^
+use_fqdn
+^^^^^^^^
 
    .. versionadded: 2.9.0
 
@@ -59,8 +59,8 @@ use_fqdn:
 
 .. _syslog_output_format:
 
-format:
-^^^^^^^
+format
+^^^^^^
 
    `ossec-csyslogd` can send alerts in multiple formats.
    The default format is a standard syslog message.

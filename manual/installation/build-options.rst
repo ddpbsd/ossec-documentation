@@ -1,17 +1,17 @@
 .. _installation_build-options:
 
-==============
-Build Options:
-==============
+=============
+Build Options
+=============
 
 OSSEC has a number of options that can be set or changed at build time.
 These options can change the behavior or resource utilization by the OSSEC processes.
 
-Required:
-=========
+Required
+========
 
-TARGET:
-^^^^^^^
+TARGET
+^^^^^^
 
 The `TARGET` is the type of system being built.
 
@@ -34,68 +34,68 @@ This is set during the compilation, either through the `install.sh` script or ma
 
    - **winagent:** Windows Agent
 
-Optional:
-=========
+Optional
+========
 
 A number of options are set in the `Makefile`, but can be modified at compile time.
 
-ZLIB_SYSTEM:
-^^^^^^^^^^^^
+ZLIB_SYSTEM
+^^^^^^^^^^^
    If set to `yes` the system installed zlib will be used
 
    *Default:* yes
 
-PCRE2_SYSTEM:
-^^^^^^^^^^^^^
+PCRE2_SYSTEM
+^^^^^^^^^^^^
 
    If set to `yes` the system installed pcre2 will be used
 
    *Default:* no
 
-LUA_ENABLE:
-^^^^^^^^^^^
+LUA_ENABLE
+^^^^^^^^^^
 
    If set to `yes` the installation process will build lua
 
    *Default:* no
 
-MAXAGENTS:
-^^^^^^^^^^
+MAXAGENTS
+^^^^^^^^^
 
    The maximum number of supported agents
 
    *Default:* 2048
 
-USE_PRELUDE:
-^^^^^^^^^^^^
+USE_PRELUDE
+^^^^^^^^^^^
 
    Enable forwarding alerts to Prelude-IDS
 
    *Default:* no
 
-USE_ZEROMQ:
-^^^^^^^^^^^
+USE_ZEROMQ
+^^^^^^^^^^
 
    Enable forwarding events via ZeroMQ
 
    *Default:* no
 
-USE_GEOIP:
-^^^^^^^^^^
+USE_GEOIP
+^^^^^^^^^
 
    Enable Lookups against the GeoIP database
 
    *Default:* no
 
-USE_INOTIFY:
-^^^^^^^^^^^^
+USE_INOTIFY
+^^^^^^^^^^^
 
    Enable realtime support in `syscheck` via `inotify` in Linux
 
    *Default:* enabled on Linux and Windows, disabled on other operating systems
 
-USE_PCRE2_JIT:
-^^^^^^^^^^^^^^
+USE_PCRE2_JIT
+^^^^^^^^^^^^^
 
    Enable the use of pcre2 Just In Time (JIT) support.
    If the installation process compiles PCRE2 this will be enabled.
@@ -103,15 +103,15 @@ USE_PCRE2_JIT:
 
    *Default:* yes
 
-REUSE_ID: 
-^^^^^^^^^
+REUSE_ID
+^^^^^^^^
 
    Allow `authd` to re-use agent IDs
 
    *Default:* no
 
-Settings:
-^^^^^^^^^
+Settings
+^^^^^^^^
 
 A listing of the default settings.
 

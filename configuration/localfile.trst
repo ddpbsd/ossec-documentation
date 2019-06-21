@@ -2,8 +2,8 @@
 
 .. _localfile_location:
 
-location:
-^^^^^^^^^
+location
+^^^^^^^^
 
    Specifies the location of a log file for ingestion.
 
@@ -13,8 +13,8 @@ location:
 
 .. _localfile_log_format:
 
-log_format:
-^^^^^^^^^^^
+log_format
+^^^^^^^^^^
 
    Specifies the format of the log file.
    OSSEC assumes the logs are in the default format and have not been customized.
@@ -107,8 +107,8 @@ log_format:
 
 .. _localfile_command:
 
-command:
-^^^^^^^^
+command
+^^^^^^^
 
    The command to be run when using ithe `command` or `full_command` `log_format`.
 
@@ -116,8 +116,8 @@ command:
 
 .. _localfile_command_alias:
 
-command_alias:
-^^^^^^^^^^^^^^
+command_alias
+^^^^^^^^^^^^^
 
    An alias for a command to help with identification.
    This alias will replace the command in the log output.
@@ -146,16 +146,16 @@ command_alias:
 
 .. _localfile_check_diff:
 
-check_diff:
-^^^^^^^^^^^
+check_diff
+^^^^^^^^^^
 
    Store the output of an event in an internal database, and compare new output to the previous.
    If the output has changed an alert will be triggered.
 
 .. _localfile_only-future-events:
 
-only-future-events:
-^^^^^^^^^^^^^^^^^^^
+only-future-events
+^^^^^^^^^^^^^^^^^^
 
    Only read log messages starting from the time the log is opened.
    By default `ossec-logcollector` will read events from the beginning of the log or from the message it last read.
@@ -168,8 +168,8 @@ only-future-events:
 
 .. _localfile_query:
 
-query:
-^^^^^^
+query
+^^^^^
 
    Specifies an `XPATH` query following the event schema in order to filter the events OSSEC will process.
    See `Microsoft's documentation <http://msdn.microsoft.com/en-us/library/windows/desktop/aa385201%28v=vs.85%29.aspx>`_ for more details.

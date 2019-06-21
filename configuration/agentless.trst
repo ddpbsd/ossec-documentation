@@ -2,8 +2,8 @@
 
 .. _agentless_type:
 
-type:
-^^^^^
+type
+^^^^
 
    The type of check to be run on the agentless system.
 
@@ -19,15 +19,15 @@ type:
 
 .. _agentless_frequency:
 
-frequency:
-^^^^^^^^^^
+frequency
+^^^^^^^^^
 
    Specifies the time in seconds between each check.
 
 .. _agentless_host:
 
-host:
-^^^^^
+host
+^^^^
 
    Specifies the username and host to be checked.
 
@@ -39,8 +39,8 @@ host:
 
 .. _agentless_state:
 
-state:
-^^^^^^
+state
+^^^^^
 
    Specifies whether the checks are periodic or periodic_diff.
 
@@ -52,8 +52,8 @@ state:
 
 .. _agentless_arguments:
 
-arguments:
-^^^^^^^^^^
+arguments
+^^^^^^^^^
 
    Specifies the arguments passed to the script.
 
