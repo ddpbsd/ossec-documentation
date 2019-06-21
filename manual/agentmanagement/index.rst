@@ -11,8 +11,8 @@ management server that receives key requests, adds an agent,
 and sends the key to the new agent.
 
 
-manage_agents:
-^^^^^^^^^^^^^^
+manage_agents
+^^^^^^^^^^^^^
 
 The `manage_agents` utility is run on both the OSSEC management server
 and the OSSEC agent.
