@@ -10,7 +10,6 @@ OSSEC Manual
    agentmanagement/index
    authd
    agentless
-   decoders
    logmonitoring
-   rules
+   lids/index
 
