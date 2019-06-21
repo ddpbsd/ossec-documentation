@@ -34,3 +34,5 @@ Duplicate IP addresses will cause issues with agents connecting to the server.
 
 .. include:: add_agent_example.trst
 
+.. include:: authd_example.trst
+
