@@ -38,3 +38,6 @@ Instead of a specific IP address a CIDR address can be used for DHCP ranges or `
 
 After the first agent is added, the OSSEC server processes should be restarted.
 
+The key that is extracted is a secret key, and should be kept safe.
+If this key is disclosed, a malicious user could impersonate the agent.
+

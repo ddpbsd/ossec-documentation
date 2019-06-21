@@ -37,6 +37,8 @@ After the agent is added, its key can be extracted with `E` at the menu.
 
 .. code-block:: console
 
+   OSSEC-AGENT # /var/ossec/bin/manage_agents
+
    ****************************************
    * OSSEC HIDS v3.2.0 Agent manager.     *
    * The following options are available: *
