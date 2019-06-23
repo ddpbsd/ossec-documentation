@@ -103,21 +103,62 @@ pcre2
 ^^^^^
 
    A pcre2 regex formatted search string.
-   Parts of the log message may be extracted into fields namd in :ref:`order`.
+   Parts of the log message may be extracted into fields namd in `order`_.
 
 .. _decoder_order:
 
 order
 ^^^^^
 
-   This option names the fields created by :ref:`pcre2` or :ref:`regex`.
+   This option names the fields created by `pcre2`_ or `regex`_.
+   The field names are comma separated.
 
+   Historically there were only a few field names available for the `order`
+   option, but as of version 3.3 any names may be used.
 
+   The historical `order` list:
 
+      - location - where the log came from (only on FTS)
+      - srcuser  - extracts the source username
+      - dstuser  - extracts the destination (target) username
+      - user     - an alias to dstuser (only one of the two can be used)
+      - srcip    - source ip
+      - dstip    - dst ip
+      - srcport  - source port
+      - dstport  - destination port
+      - protocol - protocol
+      - id       - event id
+      - url      - url of the event
+      - action   - event action (deny, drop, accept, etc)
+      - status   - event status (success, failure, etc)
+      - extra_data     - Any extra data
 
+   .. XXX verify this!
 
+   The following fields may be used in `active response` configurations:
 
+      - `user`
+      - `srcip`
 
+   .. code-block:: xml
+
+      <decoder name="widget-reg">
+        <pcre2>widget id: (\S+), name: (\w+)$</pcre2>
+        <order>widget_id, widget_name</order>
+      </decoder>
+
+.. _decoder_fts:
+
+fts
+^^^
+
+   OSSEC is able to create alerts based on *First Time Seen* events.
+   This option enables the `fts` tracking for the specified fields.
+
+   .. code-block:: xml
+
+      <decoder name="widget-fts">
+        <fts>name, user, location</fts>
 
 
 .. _pcre2: http://pcre.org
