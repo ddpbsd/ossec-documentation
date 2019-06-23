@@ -47,10 +47,11 @@ parent
 accumulate
 ^^^^^^^^^^
 
-   The `accumulate` option will allow OSSEC to track events over multiple log messages
-   based on a "decoded ID" within the log message.
    A number of programs will log a single event over multiple messages, using a unique
    identifier to link them together.
+   The `accumulate` option will allow OSSEC to track events over multiple log messages
+   based on a "decoded ID" within the log message.
+   The `accumulate` option requires an `id` field as seen in the example below.
 
    .. XXX Need to update based on pcre2 stuff
 
@@ -63,7 +64,65 @@ accumulate
         <accumulate />
      </decoder>
 
+.. _decoder_program_name:
+
+program_name
+^^^^^^^^^^^^
+
+   .. XXX Need a simple regex page
+
+   This compares the defined value to the `program_name` the pre-decoder assigns
+   to a log message.
+   This uses the simple regex syntax.
+
+.. _decoder_program_name_pcre2:
+
+program_name_pcre2
+^^^^^^^^^^^^^^^^^^
+
+   This compares the defined value to the pre-decoded `program_name` using the
+   pcre2_ syntax.
+
+.. _decoder_prematch:
+
+
+prematch
+^^^^^^^^
+
+   A search string that must match for the decoder to continue evaluation.
+   This uses the simple regex syntax.
+
+.. _decoder_prematch_pcre2:
+
+prematch_pcre2
+^^^^^^^^^^^^^^
+
+   A search string that must match for the decoder to continue evaluation.
+   This option uses the pcre2_ syntax.
+
+.. _decoder_regex:
+
+regex
+^^^^^
+
+   An OSSEC regex formatted search string.
+   Parts of the log message may be extracted into fields named in :ref:`order`.
+
+.. _decoder_pcre2:
+
+pcre2
+^^^^^
+
+   A pcre2 regex formatted search string.
+   Parts of the log message may be extracted into fields namd in :ref:`order:.
 
 
 
 
+
+
+
+
+
+
+.. _pcre2: http://pcre.org
