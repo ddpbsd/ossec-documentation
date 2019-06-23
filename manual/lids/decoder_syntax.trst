@@ -1,17 +1,6 @@
 .. _decoder_syntax:
 
 
-.. _decoder_something:
-
-something
-^^^^^^^^^
-
-   what is it?
-
-   **Default:** no
-   **Allowed:** yes
-
-
 .. _decoder_decoder:
 
 decoder
@@ -106,7 +95,7 @@ regex
 ^^^^^
 
    An OSSEC regex formatted search string.
-   Parts of the log message may be extracted into fields named in `order`.
+   Parts of the log message may be extracted into fields named in `order`_.
 
 .. _decoder_pcre2:
 
@@ -114,14 +103,14 @@ pcre2
 ^^^^^
 
    A pcre2 regex formatted search string.
-   Parts of the log message may be extracted into fields namd in `order`.
+   Parts of the log message may be extracted into fields namd in :ref:`order`.
 
 .. _decoder_order:
 
 order
 ^^^^^
 
-
+   This option names the fields created by :ref:`pcre2` or :ref:`regex`.
 
 
 
