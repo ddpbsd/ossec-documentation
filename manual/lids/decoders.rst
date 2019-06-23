@@ -11,4 +11,5 @@ or differentiated from other information in the final log.
 This can make importing the log messages into a SIEM or log management system easier.
 
 
+.. include:: decoder_syntax.trst
 

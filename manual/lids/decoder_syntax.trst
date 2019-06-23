@@ -55,7 +55,7 @@ accumulate
 
    .. XXX Need to update based on pcre2 stuff
 
-   .. codeblock:: xml
+   .. code-block:: xml
 
       <decoder name="widget-transaction">
         <parent>widget-processor</parent>
@@ -106,7 +106,7 @@ regex
 ^^^^^
 
    An OSSEC regex formatted search string.
-   Parts of the log message may be extracted into fields named in :ref:`order`.
+   Parts of the log message may be extracted into fields named in `order`.
 
 .. _decoder_pcre2:
 
@@ -114,7 +114,13 @@ pcre2
 ^^^^^
 
    A pcre2 regex formatted search string.
-   Parts of the log message may be extracted into fields namd in :ref:`order:.
+   Parts of the log message may be extracted into fields namd in `order`.
+
+.. _decoder_order:
+
+order
+^^^^^
+
 
 
 
