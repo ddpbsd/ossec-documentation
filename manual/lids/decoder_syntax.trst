@@ -1,0 +1,69 @@
+.. _decoder_syntax:
+
+
+.. _decoder_something:
+
+something
+^^^^^^^^^
+
+   what is it?
+
+   **Default:** no
+   **Allowed:** yes
+
+
+.. _decoder_decoder:
+
+decoder
+^^^^^^^
+
+   Each decoder starts by labeling it as a decoder and giving it a name.
+   The `name` must be unique.
+
+   .. code-block:: xml
+
+       <decoder name="widget-processor">
+         ...
+       </decoder>
+
+.. _decoder_parent:
+
+parent
+^^^^^^
+
+   A decoder may build on the parsing done by a previous decoder.
+   This is defined by setting a `parent` for the second decoder, using
+   the parent's name.
+
+   .. code-block:: xml
+
+      <decoder name="widget-auth">
+        <parent>widget-processor</parent>
+        ...
+      </decoder>
+
+.. _decoder_accumulate:
+
+accumulate
+^^^^^^^^^^
+
+   The `accumulate` option will allow OSSEC to track events over multiple log messages
+   based on a "decoded ID" within the log message.
+   A number of programs will log a single event over multiple messages, using a unique
+   identifier to link them together.
+
+   .. XXX Need to update based on pcre2 stuff
+
+   .. codeblock:: xml
+
+      <decoder name="widget-transaction">
+        <parent>widget-processor</parent>
+        <regex>ID: (\d+) </regex>
+        <order>id</order>
+        <accumulate />
+     </decoder>
+
+
+
+
+
