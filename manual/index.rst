@@ -8,7 +8,6 @@ OSSEC Manual
 
    installation/index
    agentmanagement/index
-   authd
    agentless
    logmonitoring
    lids/index
