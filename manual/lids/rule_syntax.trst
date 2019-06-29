@@ -61,7 +61,7 @@ rule
         - This is useful to change the level or other options of rules included with OSSEC.
 	- **Allowed** yes
 
-.. _match:
+.. _rule_match:
 
 match
 ^^^^^
@@ -69,7 +69,7 @@ match
    A simple string comparison.
 
 
-.. _regex:
+.. _rule_regex:
 
 regex
 ^^^^^
@@ -78,7 +78,7 @@ regex
 
    This option uses the OSSEC `regex` syntax for comparisons.
 
-.. _pcre2:
+.. _rule_pcre2:
 
 pcre2
 ^^^^^
@@ -86,14 +86,14 @@ pcre2
    The `pcre2` option utlizes OSSEC's pcre2 support.
    Refer to the `pcre2 <https://www.pcre.org>`_ page for information on the syntax.
 
-.. _decoded_as:
+.. _rule_decoded_as:
 
 decoded_as
 ^^^^^^^^^^
 
    Define a decoder that must be matched for the rule comparison to continue.
 
-.. _category:
+.. _rule_category:
 
 category
 ^^^^^^^^
@@ -102,45 +102,45 @@ category
 
     - **Allowed:** Any category `categories` 
 
-.. _srcip:
+.. _rule_srcip:
 
     - Any IP address or CIDR block to be compared to an IP decoded as srcip.
     - Use "!" to negate it.
 
     - **Allowed:** Any srcip 
 
-.. _dstip:
+.. _rule_dstip:
 
     - Any IP address or CIDR block to be compared to an IP decoded as dstip.
     - Use "!" to negate it.
 
     - **Allowed:** Any dstip 
 
-.. _extra_data:
+.. _rule_extra_data:
 
     - Any string that is decoded into the ``extra_data`` field.
 
     - **Allowed:** Any string.
 
-.. _user:
+.. _rule_user:
 
     - Any username (decoded as the username).
 
     - **Allowed:** any :ref:`os_match` 
 
-.. _program_name:
+.. _rule_program_name:
 
     - Program name is decoded from syslog process name. 
 
     - **Allowed:** any :ref:`os_match` 
 
-.. _hostname:
+.. _rule_hostname:
 
     - Any hostname (decoded as the syslog hostname) or log file.
 
     - **Allowed:** any :ref:`os_match` 
 
-.. _time:
+.. _rule_time:
 
     - Time that the event was generated.
 
@@ -148,43 +148,43 @@ category
 
     - **Example:** ``<time>6 am - 6 pm</time>``
 
-.. _weekday:
+.. _rule_weekday:
 
     - Week day that the event was generated. Multiple entries can be separated by commas.
 
     - **Allowed:** monday - sunday, weekdays, weekends
 
-.. _id:
+.. _rule_id:
 
     - Any ID (decoded as the ID). 
 
     - **Allowed:** any :ref:`os_match` 
 
-.. _url:
+.. _rule_url:
 
     - Any URL (decoded as the URL).
     
     - **Allowed:** any :ref:`os_match` 
 
-.. _if_sid:
+.. _rule_if_sid:
 
     - Matches if the ID has matched. 
 
     - **Allowed:** Any rule id 
 
-.. _if_group:
+.. _rule_if_group:
 
     - Matches if the group has matched before. 
 
     - **Allowed:** Any Group 
 
-.. _if_level:
+.. _rule_if_level:
 
     - Matches if the level has matched before. 
 
     - **Allowed:** Any level from 1 to 16 
 
-.. _if_matched_sid:
+.. _rule_if_matched_sid:
 
     - Matches if an alert of the defined ID has been triggered in a set number of seconds.
     - This option is used in conjunction with frequency_ and timeframe_.
@@ -194,62 +194,62 @@ category
 
     - **Allowed:** Any rule id 
 
-.. _if_matched_group:
+.. _rule_if_matched_group:
 
     - Matches if an alert of the defined group has been triggered in a set number of seconds.
     - This option is used in conjunction with frequency_ and timeframe_.
 
     - **Allowed:** Any group 
 
-.. _same_id:
+.. _rule_same_id:
 
     - Specifies that the decoded id must be the same.
     - This option is used in conjunction with frequency_ and timeframe_.
 
     - **Example:** <same_id />
 
-.. _same_source_ip:
+.. _rule_same_source_ip:
 
     - Specifies that the decoded source ip must be the same. 
     - This option is used in conjunction with frequency_ and timeframe_.
 
     - **Example:** <same_source_ip />
 
-.. _same_source_port:
+.. _rule_same_source_port:
 
     - Specifies that the decoded source port must be the same. 
     - This option is used in conjunction with frequency_ and timeframe_.
 
     - **Example:** <same_source_port />
 
-.. _same_dst_port:
+.. _rule_same_dst_port:
 
     - Specifies that the decoded destination port must be the same.
     - This option is used in conjunction with frequency_ and timeframe_.
 
     - **Example:** <same_source_port />
 
-.. _same_location:
+.. _rule_same_location:
 
     - Specifies that the location must be the same.
     - This option is used in conjunction with frequency_ and timeframe_.
 
     - **Example:** <same_location />
 
-.. _same_user:
+.. _rule_same_user:
 
     - Specifies that the decoded user must be the same.
     - This option is used in conjunction with frequency_ an timeframe_.
 
     - **Example:** <same_user />
 
-.. _description:
+.. _rule_description:
 
     - Rule description. 
 
     - **Allowed:** Any string 
 
-.. _list:
+.. _rule_list:
 
     Preform a CDB lookup using an ossec list.  This is a fast on disk database which will 
     always find keys within two seeks of the file.  
@@ -275,6 +275,7 @@ category
         - Value: action 
 
     .. _list-lookup:
+
     - *lookup*
         
         This is the type of lookup that is preformed: 
@@ -332,7 +333,7 @@ category
 	</rule>
 
 
-.. _info:
+.. _rule_info:
 
     Extra information may be added through the following attributes:
 
@@ -375,7 +376,7 @@ category
             <info>Type text is the default</info>
         </rule>
 
-.. _options:
+.. _rule_options:
 
     Additional rule options 
 
@@ -396,13 +397,13 @@ category
 
         - *Example:* <options>no_log</options>
 
-.. _check_diff:
+.. _rule_check_diff:
 
     Used to determine when the output of a command changes.
 
     **Usage:** <check_diff />
 
-.. _group:
+.. _rule_group:
 
    - Add additional groups to the alert. Groups are optional tags added to alerts. They can be used by other rules by using ``if_group`` or ``if_matched_group``, or by alert parsing tools to categorize alerts.
 
