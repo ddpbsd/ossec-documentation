@@ -4,3 +4,6 @@
 Rules
 =====
 
+
+.. include:: rule_syntax.trst
+
