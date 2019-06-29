@@ -139,6 +139,7 @@ order
 
       - `user`
       - `srcip`
+      - `filename` (syscheck file name?)
 
    .. code-block:: xml
 
