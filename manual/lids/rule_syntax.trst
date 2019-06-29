@@ -7,59 +7,58 @@ rule
 
    Each rule begins by defining certain settings
 
-    .. _level:
+   .. _level:
 
-    - *level* 
+   - *level* 
 
-        - Specifies the level of the rule. Alerts and responses use this value. 
-        - **Allowed:** Any number (0 to 16) 
+   This defines the severity of the rule.
+   Valid levels are 0-16.
 
-    .. _id:
+   .. _id:
 
-    - *id* 
+   - *id* 
 
-        - Specifies the ID of the rule. 
-        - **Allowed:** Any number from 100 to 99999 
+   A unique identification number for the rule. 
 
-    .. _maxsize:
+   .. _maxsize:
 
-    - *maxsize* 
+   - *maxsize* 
 
-        - Specifies the maximum size of the event. 
-        - **Allowed:** Any number from 1 to 99999 
+   Specifies the maximum size of the event. 
+   The valid range is 1-99999 
 
-    .. _frequency:
+   .. _frequency:
 
-    - *frequency*
+   - *frequency*
 
-          - Specifies the number of times the rule must have matched before firing. The number that triggers the rule is actually 2 more than this setting.
-          - **Allowed:** Any number from 1 to 999
-	  - **Example:** frequency="2" would mean the rule must be matched 4 times
+   Specifies the number of times the rule must have matched before firing.
+   The number that triggers the rule is actually 2 more than this setting.
 
-          .. note::
-             More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
+   .. note::
+      More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
 
     .. _timeframe:
 
     - *timeframe*
 
-        - The timeframe in seconds.
-        - This option is intended to be used with the frequency option.
-        - **Allowed:** Any number from 1 to 9999
+    The timeframe in seconds.
+    This option is intended to be used with the frequency option.
+    **Allowed:** Any number from 1 to 9999
 
     .. _ignore:
 
     - *ignore* 
 
-        - The time (in seconds) to ignore this rule after firing it (to avoid floods). 
-        - **Allowed:** Any number from 1 to 9999
+    The time (in seconds) to ignore this rule after firing it (to avoid floods). 
+    **Allowed:** Any number from 1 to 9999
 
     .. _overwrite:
 
     - *overwrite*
-	- Used to supercede an OSSEC rule with local changes.
-        - This is useful to change the level or other options of rules included with OSSEC.
-	- **Allowed** yes
+
+	Used to supercede an OSSEC rule with local changes.
+    This is useful to change the level or other options of rules included with OSSEC.
+	**Allowed** yes
 
 .. _rule_match:
 
@@ -126,19 +125,19 @@ category
 
     - Any username (decoded as the username).
 
-    - **Allowed:** any :ref:`os_match` 
+    - **Allowed:** any `os_match` 
 
 .. _rule_program_name:
 
     - Program name is decoded from syslog process name. 
 
-    - **Allowed:** any :ref:`os_match` 
+    - **Allowed:** any `os_match` 
 
 .. _rule_hostname:
 
     - Any hostname (decoded as the syslog hostname) or log file.
 
-    - **Allowed:** any :ref:`os_match` 
+    - **Allowed:** any `os_match` 
 
 .. _rule_time:
 
@@ -158,13 +157,13 @@ category
 
     - Any ID (decoded as the ID). 
 
-    - **Allowed:** any :ref:`os_match` 
+    - **Allowed:** any `os_match` 
 
 .. _rule_url:
 
     - Any URL (decoded as the URL).
     
-    - **Allowed:** any :ref:`os_match` 
+    - **Allowed:** any `os_match` 
 
 .. _rule_if_sid:
 
@@ -257,6 +256,7 @@ category
     **Attributes:**
 
     .. _list-field:
+
     - *field* 
         
         Field that is used as the key to look up in the CDB file:
@@ -315,6 +315,7 @@ category
                This feature is not yet complete.
 
     .. _list-check_value:
+
     - *check_value* 
         
         - regex pattern for matching on the value pulled out of the cdb when using lookup types: address_match_key_value, match_key_value
