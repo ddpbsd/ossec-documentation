@@ -55,6 +55,9 @@ The user, host, and password to access the host can be set with this script.
 These hosts must also be defined in the `ossec.conf` to define which checks
 are performed on them.
 
+More information can be found in the `ossec.conf` configuration documentation.
+The agentless_ section provides details.
+
 The default checks bundled in OSSEC are:
 
 .. code-block:: console
