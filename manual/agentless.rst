@@ -75,4 +75,5 @@ The default checks bundled in OSSEC are:
    su.exp
 
 
+.. _agentless: ../configuration/ossec_conf.html#agentless
 
