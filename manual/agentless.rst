@@ -52,3 +52,24 @@ The user, host, and password to access the host can be set with this script.
         add <user@host> [<passwd>] (<additional_pass>)
         list (passwords)
 
+These hosts must also be defined in the `ossec.conf` to define which checks
+are performed on them.
+
+The default checks bundled in OSSEC are:
+
+.. code-block:: console
+
+   main.exp
+   ssh.exp
+   ssh_asa-fwsmconfig_diff
+   ssh_foundry_diff
+   ssh_generic_diff
+   ssh_integrity_check_bsd
+   ssh_integrity_check_linux
+   ssh_nopass.exp
+   ssh_pixconfig_diff
+   sshlogin.exp
+   su.exp
+
+
+
