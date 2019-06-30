@@ -1,8 +1,8 @@
 .. _manual_regex:
 
-===============================
-OSSEC Regular Expression Syntax
-===============================
+=========================
+Regular Expression Syntax
+=========================
 
 Currently OSSEC supports three regex syntaxes: `OS_Regex`, `OS_Match`, and
 `pcre2`.
