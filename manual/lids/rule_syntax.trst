@@ -43,14 +43,12 @@ rule
 
     The timeframe in seconds.
     This option is intended to be used with the frequency option.
-    **Allowed:** Any number from 1 to 9999
 
     .. _ignore:
 
     - *ignore* 
 
     The time (in seconds) to ignore this rule after firing it (to avoid floods). 
-    **Allowed:** Any number from 1 to 9999
 
     .. _overwrite:
 
@@ -58,7 +56,6 @@ rule
 
 	Used to supercede an OSSEC rule with local changes.
     This is useful to change the level or other options of rules included with OSSEC.
-	**Allowed** yes
 
 .. _rule_match:
 
@@ -279,7 +276,6 @@ list
    Preform a CDB lookup using an ossec list.  This is a fast on disk database which will 
    always find keys within two seeks of the file.  
 
-    **Attributes:**
 
     .. _list-field:
 
@@ -346,8 +342,6 @@ list
         
         - regex pattern for matching on the value pulled out of the cdb when using lookup types: address_match_key_value, match_key_value
 
-    **Allowed:** 
-        
         Path to the CDB file to be used for lookup from the OSSEC directory.  This file must also be included in the ossec.conf file.
 
     **Example:**
@@ -365,30 +359,30 @@ list
 info
 ^^^^
 
-   Extra information may be added through the following attributes:
+   Extra information may be added to an alert using `info`.
+   The type must be specified using one of the following options:
 
-    **Attributes:**
+   .. _info-type: 
 
-    - *type* 
+   - *type* 
 
-        - Value: text 
+       - Value: text 
 
-            This is the default when no type is selected.  Just used for additional 
-            information about the alert/event. 
+           This is the default when no type is selected.  Just used for additional 
+           information about the alert/event. 
 
-        - Value: link
+       - Value: link
 
-            Link to more information about the alert/event.  
+           Link to more information about the alert/event.  
 
-        - Value: cve 
+       - Value: cve 
 
-            The CVE Number related to this alert/event.  
+           The CVE Number related to this alert/event.  
 
-        - Value: ovsdb 
+       - Value: ovsdb 
 
-            The osvdb id related to this alert/event. 
+           The osvdb id related to this alert/event. 
 
-    **Allowed:** String but content is dependent on the type attribute. 
 
     **Example:** 
 
@@ -413,22 +407,29 @@ options
 
    Additional rule options 
 
-    **Allowed:** 
+   .. _options-alert_by_email:
 
-    - *alert_by_email*
-	- Always alert by email.
+   - *alert_by_email*
 
-        - *Example:* <options>alert_by_email</options>
+      Always alert by email.
 
-    - *no_email_alert* 
-	- Never alert by email.
+      - *Example:* <options>alert_by_email</options>
 
-        - *Example:* <options>no_email_alert</options>
+   .. _options-no_email_alert:
 
-    - no_log
-	- Do not log this alert.
+   - *no_email_alert* 
 
-        - *Example:* <options>no_log</options>
+      Never alert by email.
+
+      - *Example:* <options>no_email_alert</options>
+
+   .. _options-no_logs
+
+   - *no_log*
+	
+      Do not log this alert.
+
+      - *Example:* <options>no_log</options>
 
 .. _rule_check_diff:
 
