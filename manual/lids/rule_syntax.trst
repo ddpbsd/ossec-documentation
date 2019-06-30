@@ -67,7 +67,6 @@ match
 
    A simple string comparison.
 
-
 .. _rule_regex:
 
 regex
@@ -97,161 +96,188 @@ decoded_as
 category
 ^^^^^^^^
 
-    - The decoded category to match (ids, syslog, firewall, web-log, squid or windows). 
-
-    - **Allowed:** Any category `categories` 
+   The decoded category to match (ids, syslog, firewall, web-log, squid or windows). 
 
 .. _rule_srcip:
 
-    - Any IP address or CIDR block to be compared to an IP decoded as srcip.
-    - Use "!" to negate it.
+srcip
+^^^^^
 
-    - **Allowed:** Any srcip 
+   Any IP address or CIDR block to be compared to an IP decoded as srcip.
+   Use "!" to negate it.
 
 .. _rule_dstip:
 
-    - Any IP address or CIDR block to be compared to an IP decoded as dstip.
-    - Use "!" to negate it.
+dstip
+^^^^^
 
-    - **Allowed:** Any dstip 
+   Any IP address or CIDR block to be compared to an IP decoded as dstip.
+   Use "!" to negate it.
 
 .. _rule_extra_data:
 
-    - Any string that is decoded into the ``extra_data`` field.
+extra_data
+^^^^^^^^^^
 
-    - **Allowed:** Any string.
+   Any string that is decoded into the ``extra_data`` field.
 
 .. _rule_user:
 
-    - Any username (decoded as the username).
+user
+^^^^
 
-    - **Allowed:** any `os_match` 
+   Any username (decoded as the username).
 
 .. _rule_program_name:
 
-    - Program name is decoded from syslog process name. 
+program_name
+^^^^^^^^^^^^
 
-    - **Allowed:** any `os_match` 
+   Program name is decoded from syslog process name. 
 
 .. _rule_hostname:
 
-    - Any hostname (decoded as the syslog hostname) or log file.
+hostname
+^^^^^^^^
 
-    - **Allowed:** any `os_match` 
+   Any hostname (decoded as the syslog hostname) or log file.
 
 .. _rule_time:
 
-    - Time that the event was generated.
+time
+^^^^
 
-    - **Allowed:** Any time range (hh:mm-hh:mm) 
-
-    - **Example:** ``<time>6 am - 6 pm</time>``
+   Time that the event was generated.
+   Any time range can be defined, in the format of *hh:mm-hh:mm*.
+   AM/PM can also be used: `<time>6 am - 6 pm</time>`
 
 .. _rule_weekday:
 
-    - Week day that the event was generated. Multiple entries can be separated by commas.
+weekday
+^^^^^^^
 
-    - **Allowed:** monday - sunday, weekdays, weekends
+   Specify a week day that the event was generated.
+   Multiple entries can be separated by commas.
 
 .. _rule_id:
 
-    - Any ID (decoded as the ID). 
+id
+^^
 
-    - **Allowed:** any `os_match` 
+   Any ID (decoded as the ID). 
 
 .. _rule_url:
 
-    - Any URL (decoded as the URL).
-    
-    - **Allowed:** any `os_match` 
+url
+^^^
 
+   Any string decoded into the `url` field.
+    
 .. _rule_if_sid:
 
-    - Matches if the ID has matched. 
+if_sid
+^^^^^^
 
-    - **Allowed:** Any rule id 
+   Matches if the rule ID has matched.
+   This is used to create children to other rules.
 
 .. _rule_if_group:
 
-    - Matches if the group has matched before. 
+if_group
+^^^^^^^^
 
-    - **Allowed:** Any Group 
+   Matches if the group has matched before. 
+   This can be used to create children of other rules.
 
 .. _rule_if_level:
 
-    - Matches if the level has matched before. 
+if_level
+^^^^^^^^
 
-    - **Allowed:** Any level from 1 to 16 
+   Matches if the level has matched before. 
 
 .. _rule_if_matched_sid:
 
-    - Matches if an alert of the defined ID has been triggered in a set number of seconds.
-    - This option is used in conjunction with frequency_ and timeframe_.
+if_matched_sid
+^^^^^^^^^^^^^^
 
-    .. note::
-        Rules at level 0 are discarded immediately and will not be used with the ``if_matched_`` rules. The level must be at least ``1``, but the ``<no_log>`` option can be added to the rule to make sure it does not get logged.
+   Matches if an alert of the defined ID has been triggered in a set number of seconds.
+   This option is used in conjunction with frequency_ and timeframe_.
 
-    - **Allowed:** Any rule id 
+   .. note::
+      Rules at level 0 are discarded immediately and will not be used with the ``if_matched_`` rules. The level must be at least ``1``, but the ``<no_log>`` option can be added to the rule to make sure it does not get logged.
+
 
 .. _rule_if_matched_group:
 
-    - Matches if an alert of the defined group has been triggered in a set number of seconds.
-    - This option is used in conjunction with frequency_ and timeframe_.
+if_matched_group
+^^^^^^^^^^^^^^^^
 
-    - **Allowed:** Any group 
+   Matches if an alert of the defined group has been triggered in a set number of seconds.
+   This option is used in conjunction with frequency_ and timeframe_.
 
 .. _rule_same_id:
 
-    - Specifies that the decoded id must be the same.
-    - This option is used in conjunction with frequency_ and timeframe_.
+same_id
+^^^^^^^
 
-    - **Example:** <same_id />
+   Specifies that the decoded id must be the same.
+   This option is used in conjunction with frequency_ and timeframe_.
 
 .. _rule_same_source_ip:
 
-    - Specifies that the decoded source ip must be the same. 
-    - This option is used in conjunction with frequency_ and timeframe_.
+same_source_ip
+^^^^^^^^^^^^^^
 
-    - **Example:** <same_source_ip />
+   Specifies that the decoded source ip must be the same. 
+   This option is used in conjunction with frequency_ and timeframe_.
 
 .. _rule_same_source_port:
 
-    - Specifies that the decoded source port must be the same. 
-    - This option is used in conjunction with frequency_ and timeframe_.
+same_source_port
+^^^^^^^^^^^^^^^^
 
-    - **Example:** <same_source_port />
+   Specifies that the decoded source port must be the same. 
+   This option is used in conjunction with frequency_ and timeframe_.
 
 .. _rule_same_dst_port:
 
-    - Specifies that the decoded destination port must be the same.
-    - This option is used in conjunction with frequency_ and timeframe_.
+same_dst_port
+^^^^^^^^^^^^^
 
-    - **Example:** <same_source_port />
+   Specifies that the decoded destination port must be the same.
+   This option is used in conjunction with frequency_ and timeframe_.
 
 .. _rule_same_location:
 
-    - Specifies that the location must be the same.
-    - This option is used in conjunction with frequency_ and timeframe_.
+same_location
+^^^^^^^^^^^^^
 
-    - **Example:** <same_location />
+   Specifies that the location must be the same.
+   This option is used in conjunction with frequency_ and timeframe_.
 
 .. _rule_same_user:
 
-    - Specifies that the decoded user must be the same.
-    - This option is used in conjunction with frequency_ an timeframe_.
+same_user
+^^^^^^^^^
 
-    - **Example:** <same_user />
+   Specifies that the decoded user must be the same.
+   This option is used in conjunction with frequency_ an timeframe_.
 
 .. _rule_description:
 
-    - Rule description. 
+description
+^^^^^^^^^^^
 
-    - **Allowed:** Any string 
+   The rule description. 
 
 .. _rule_list:
 
-    Preform a CDB lookup using an ossec list.  This is a fast on disk database which will 
-    always find keys within two seeks of the file.  
+list
+^^^^
+
+   Preform a CDB lookup using an ossec list.  This is a fast on disk database which will 
+   always find keys within two seeks of the file.  
 
     **Attributes:**
 
@@ -336,7 +362,10 @@ category
 
 .. _rule_info:
 
-    Extra information may be added through the following attributes:
+info
+^^^^
+
+   Extra information may be added through the following attributes:
 
     **Attributes:**
 
@@ -379,7 +408,10 @@ category
 
 .. _rule_options:
 
-    Additional rule options 
+options
+^^^^^^^
+
+   Additional rule options 
 
     **Allowed:** 
 
@@ -400,12 +432,15 @@ category
 
 .. _rule_check_diff:
 
-    Used to determine when the output of a command changes.
+check_diff
+^^^^^^^^^^
 
-    **Usage:** <check_diff />
+   Used to determine when the output of a command changes.
 
 .. _rule_group:
 
-   - Add additional groups to the alert. Groups are optional tags added to alerts. They can be used by other rules by using ``if_group`` or ``if_matched_group``, or by alert parsing tools to categorize alerts.
+group
+^^^^^
 
-    *Example:* <group>group1, group2</group>
+   Add additional groups to the alert. Groups are optional tags added to alerts. They can be used by other rules by using ``if_group`` or ``if_matched_group``, or by alert parsing tools to categorize alerts.
+
