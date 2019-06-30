@@ -280,81 +280,81 @@ list
    always find keys within two seeks of the file.  
 
 
-    .. _list-field:
+   .. _list-field:
 
-    - *field* 
+   - *field* 
         
-        Field that is used as the key to look up in the CDB file:
+      Field that is used as the key to look up in the CDB file:
 
-        - Value: srcip 
-        - Value: srcport 
-        - Value: dstip 
-        - Value: dstport 
-        - Value: extra_data
-        - Value: user 
-        - Value: url 
-        - Value: id
-        - Value: hostname 
-        - Value: program_name 
-        - Value: status 
-        - Value: action 
+      - Value: srcip 
+      - Value: srcport 
+      - Value: dstip 
+      - Value: dstport 
+      - Value: extra_data
+      - Value: user 
+      - Value: url 
+      - Value: id
+      - Value: hostname 
+      - Value: program_name 
+      - Value: status 
+      - Value: action 
 
-    .. _list-lookup:
+   .. _list-lookup:
 
-    - *lookup*
+   - *lookup*
         
-        This is the type of lookup that is preformed: 
+      This is the type of lookup that is preformed: 
 
-        - Value: match_key
+       - Value: match_key
 
-            - Positive key match: field is the key to search within the cdb and will match if they key is present.
+          - Positive key match: field is the key to search within the cdb and will match if they key is present.
 
-            - This is the default if no lookup is specified.
+          - This is the default if no lookup is specified.
 
-        - Value: not_match_key
+      - Value: not_match_key
 
-            - Negative key match: field is the key to search and will match if it *IS NOT* present in the database.
+          - Negative key match: field is the key to search and will match if it *IS NOT* present in the database.
             
-        - Value: match_key_value
+      - Value: match_key_value
 
-            - Key and Value Match: field is searched for in the cdb and if found the value will be compared with regex from attribute check_value.
+          - Key and Value Match: field is searched for in the cdb and if found the value will be compared with regex from attribute check_value.
 
-            .. note::
+          .. note::
 
-               This feature is not yet complete.
+             This feature is not yet complete.
 
-        - Value: address_match_key 
+      - Value: address_match_key 
 
-            - Positive key match: field is an IP address and the key to search within the cdb and will match if they key is present.
+          - Positive key match: field is an IP address and the key to search within the cdb and will match if they key is present.
 
-        - Value: not_address_match_key
+      - Value: not_address_match_key
 
-            - Negative key match: field is an IP address the key to search and will match if it *IS NOT* present in the database.
+          - Negative key match: field is an IP address the key to search and will match if it *IS NOT* present in the database.
 
-        - Value: address_match_key_value
+      - Value: address_match_key_value
 
-            - Key and Value Match: field is an IP address searched for in the cdb and if found the value will be compared with regex from attribute check_value.
+          - Key and Value Match: field is an IP address searched for in the cdb and if found the value will be compared with regex from attribute check_value.
 
-            .. note::
+          .. note::
 
-               This feature is not yet complete.
+             This feature is not yet complete.
 
-    .. _list-check_value:
+   .. _list-check_value:
 
-    - *check_value* 
+   - *check_value* 
         
-        - regex pattern for matching on the value pulled out of the cdb when using lookup types: address_match_key_value, match_key_value
+      - regex pattern for matching on the value pulled out of the cdb when using lookup types: address_match_key_value, match_key_value
 
-        Path to the CDB file to be used for lookup from the OSSEC directory.  This file must also be included in the ossec.conf file.
+      Path to the CDB file to be used for lookup from the OSSEC directory.  This file must also be included in the ossec.conf file.
 
-    **Example:**
+   **Example:**
 
-    .. code-block:: xml
+   .. code-block:: xml
 
-	<rule id="100000" level="7">
-	  <list lookup="match_key" field="srcip">path/to/list/file</list>
-	  <description>Checking srcip against cdb list file</description>
-	</rule>
+      <rule id="100000" level="7">
+	    <list lookup="match_key" field="srcip">path/to/list/file</list>
+	    <description>Checking srcip against cdb list file</description>
+      </rule>
 
 
 .. _rule_info:
