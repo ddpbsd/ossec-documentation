@@ -29,6 +29,10 @@ Information on the syntax for pcre2 can be found in the
 OS_Regex/regex
 ^^^^^^^^^^^^^^
 
+.. warning::
+
+   This syntax is legacy, please use the `pcre2` syntax for anything new.
+
 Fast and simple library for regular expressions in C.
 
 This library is designed to be simple, but support the most common regular
