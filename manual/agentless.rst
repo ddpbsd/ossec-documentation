@@ -1,8 +1,8 @@
 .. _manual_agentless:
 
-================
-ossec-agentlessd
-================
+====================
+Agentless Management
+====================
 
-
+OSSEC has the capability to monitor systems which cannot accept an agent.
 
