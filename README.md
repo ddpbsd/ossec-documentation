@@ -1,6 +1,5 @@
 # The Great OSSEC Documentation Re-write!
 
-
 ## History
 
 In 2010 @jrossi re-wrote the OSSEC documentation.
@@ -36,4 +35,11 @@ Submit an issue, or clone/fix/submit a PR!
 * Fill out the manual bits.
 
 * Walkthrough
+
+* Look for XXX notes
+
+* Flesh out a lot of it
+
+  * agentless stuff needs a lot of work
+
 

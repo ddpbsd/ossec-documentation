@@ -42,7 +42,7 @@ Adding Hosts
 
 Hosts can be added via the `register_host.sh` script.
 
-
+The user, host, and password to access the host can be set with this script.
 
 
 .. code-block:: console
