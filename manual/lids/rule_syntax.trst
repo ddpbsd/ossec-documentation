@@ -34,30 +34,30 @@ rule
    Specifies the number of times the rule must have matched before firing.
    The number that triggers the rule is actually 2 more than this setting.
 
-      .. note::
+   .. note::
 
-         More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
+      More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
 
 
-    .. _timeframe:
+   .. _timeframe:
 
-    - *timeframe*
+   - *timeframe*
 
-    The timeframe in seconds.
-    This option is intended to be used with the frequency option.
+   The timeframe in seconds.
+   This option is intended to be used with the frequency option.
 
-    .. _ignore:
+   .. _ignore:
 
-    - *ignore* 
+   - *ignore* 
 
-    The time (in seconds) to ignore this rule after firing it (to avoid floods). 
+   The time (in seconds) to ignore this rule after firing it (to avoid floods). 
 
-    .. _overwrite:
+   .. _overwrite:
 
-    - *overwrite*
+   - *overwrite*
 
-	Used to supercede an OSSEC rule with local changes.
-    This is useful to change the level or other options of rules included with OSSEC.
+   Used to supercede an OSSEC rule with local changes.
+   This is useful to change the level or other options of rules included with OSSEC.
 
 .. _rule_match:
 
