@@ -34,9 +34,9 @@ rule
    Specifies the number of times the rule must have matched before firing.
    The number that triggers the rule is actually 2 more than this setting.
 
-   .. note::
+      .. note::
 
-      More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
+         More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
 
 
     .. _timeframe:
@@ -204,6 +204,7 @@ if_matched_sid
    This option is used in conjunction with frequency_ and timeframe_.
 
    .. note::
+
       Rules at level 0 are discarded immediately and will not be used with the ``if_matched_`` rules. The level must be at least ``1``, but the ``<no_log>`` option can be added to the rule to make sure it does not get logged.
 
 
