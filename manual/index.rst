@@ -11,4 +11,5 @@ OSSEC Manual
    agentless
    logmonitoring
    lids/index
+   regex
 
