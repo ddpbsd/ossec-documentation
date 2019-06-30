@@ -35,7 +35,9 @@ rule
    The number that triggers the rule is actually 2 more than this setting.
 
    .. note::
+
       More information about how frequency is counted can be found `in this thread. <http://marc.info/?l=ossec-list&m=129736702512080&w=2>`_
+
 
     .. _timeframe:
 
