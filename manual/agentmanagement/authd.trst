@@ -4,3 +4,9 @@ ossec-authd
 ^^^^^^^^^^^
 
 Instead of adding agents manually, `ossec-authd` can be used.
+`ossec-authd` is a daemon that listens for TLS connections, adds the connecting machine
+as an agent, and replies with a new key. On the agent, the `agent-auth` program is run
+to communicate with `ossec-authd`.
+
+Support for this requires the `OpenSSL <https://www.openssl.org/>`_ development libraries.
+
