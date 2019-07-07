@@ -171,6 +171,23 @@ This can also be avoided by using bash to run ``install.sh``:
 
    # bash ./install.sh
 
+Alpine Linux
+^^^^^^^^^^^^
+
+The following packages should be installed for OSSEC to build:
+
+.. code-block:: console
+
+   libc-dev pcre2-dev bsd-compat-headers libevent-dev openssl-dev zlib-dev linux-headers
+
+Even with the `linux-headers` package installed, make will not be able to find `a.out.h`.
+Until the installer is fixed, link `a.out.h` to `src/headers`:
+
+.. code-block:: console
+
+   ln -s /usr/include/linux/a.out.h ./headers/a.out.h
+
+
 OpenBSD
 ^^^^^^^
 
