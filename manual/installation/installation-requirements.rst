@@ -174,7 +174,7 @@ This can also be avoided by using bash to run ``install.sh``:
 Alpine Linux
 ^^^^^^^^^^^^
 
-For an agent installation the following packages should be installed:
+To build OSSEC on Alpine Linux the following packages should be installed:
 
 .. code-block:: console
 
@@ -191,7 +191,7 @@ Until the installer is fixed, link `a.out.h` to `src/headers`:
 OpenBSD
 ^^^^^^^
 
-For an agent installation the following packages should be installed:
+To build OSSEC on OpenBSD the following packages should be installed:
 
 .. code-block:: console
 
