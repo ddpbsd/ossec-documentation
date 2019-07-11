@@ -32,11 +32,13 @@ There can be multiple `<agent_config>` blocks in the `agent.conf`.
 
 Each block can be restricted with 3 options.
 The options are `os` to limit by operating system, `name` to limit by the agent name, and `profile` to use agent profiles.
+Every agent that matches the restriction will apply the configuration block.
+Every agent will apply a configuration block that does not contain a restriction.
 
 .. _agent_os:
 
-   os
-   ^^
+os
+^^
 
    The general operating system can be specified with `os`.
    Typical options include `Windows` and `Linux`.
@@ -45,18 +47,29 @@ The options are `os` to limit by operating system, `name` to limit by the agent 
 
       <agent_config os="Windows">
 
-   name
-   ^^^^
+name
+^^^^
 
    .. XXX Link to manage_agents and authd
 
    An agent name can be specified with `name`.
-
    This is the name the agent is given when it is added with `manage_agents` or `authd`.
 
    .. code-block:: xml
 
       <agent_config name="agent007">
+
+profile
+^^^^^^^
+
+   .. XXX link to ossec.conf profile options
+
+   A `profile` is a group of similar agents that can agent can subscribe to in its `ossec.conf`.
+
+   .. code-block:: xml
+
+      <agent_config profile="webservers">
+
 
 Minimal ossec.conf
 ^^^^^^^^^^^^^^^^^^
