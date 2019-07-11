@@ -15,6 +15,48 @@ The `agent.conf` file (and the contents of `/var/ossec/etc/shared`) will be push
 Many of the configuration options in the `ossec.conf` can be placed in teh agent.conf.
 If the `agent.conf` is modified, the agent will have to be restarted for the changes to take effect.
 
+
+Syntax
+^^^^^^
+
+Each block of configuration should be surrounded by `<agent_config>`.
+There can be multiple `<agent_config>` blocks in the `agent.conf`.
+
+.. code-block:: console
+
+   <agent_config>
+
+     <!-- Configuration goes here -->
+
+   </agent_config>
+
+Each block can be restricted with 3 options.
+The options are `os` to limit by operating system, `name` to limit by the agent name, and `profile` to use agent profiles.
+
+.. _agent_os:
+
+   os
+   ^^
+
+   The general operating system can be specified with `os`.
+   Typical options include `Windows` and `Linux`.
+
+   .. code-block:: xml
+
+      <agent_config os="Windows">
+
+   name
+   ^^^^
+
+   An agent name can be specified with `name`.
+   ... XXX Link to manage_agents and authd
+
+   This is the name the agent is given when it is added with `manage_agents` or `authd`.
+
+   .. code-block:: xml
+
+      <agent_config name="agent007">
+
 Minimal ossec.conf
 ^^^^^^^^^^^^^^^^^^
 
