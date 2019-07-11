@@ -79,12 +79,20 @@ Minimal `ossec.conf` example:
 
    <ossec_config>
      <client>
-     <server-hostname>ossec.example.com</server-hostname>
-   </client>
+       <server-hostname>ossec.example.com</server-hostname>
+     </client>
 
 Settings that will not work
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 By default the OSSEC agent will not run commands from an `agent.conf`.
 Any `<localfile>` options that require `command` or `full_command` should be configured in the agent's `ossec.conf.`
+
+.. warning::
+
+   There are other configuration options that will not work in the `agent.conf`, but there is not an up to date
+   list of which options these are. Any help making this list would be appreciated.
+
+
+.. include:: agent_conf_examples.trst
 
