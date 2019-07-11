@@ -48,8 +48,9 @@ The options are `os` to limit by operating system, `name` to limit by the agent 
    name
    ^^^^
 
+   .. XXX Link to manage_agents and authd
+
    An agent name can be specified with `name`.
-   ... XXX Link to manage_agents and authd
 
    This is the name the agent is given when it is added with `manage_agents` or `authd`.
 
