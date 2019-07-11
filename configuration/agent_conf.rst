@@ -22,7 +22,7 @@ Syntax
 Each block of configuration should be surrounded by `<agent_config>`.
 There can be multiple `<agent_config>` blocks in the `agent.conf`.
 
-.. code-block:: console
+.. code-block:: xml
 
    <agent_config>
 
@@ -49,8 +49,6 @@ os
 
 name
 ^^^^
-
-   .. XXX Link to manage_agents and authd
 
    An agent name can be specified with `name`.
    This is the name the agent is given when it is added with `manage_agents <../manual/agentmanagement/index.html#manage-agents>`_ or `authd <../manual/agentmanagement/index.html#ossec-authd>`_.
