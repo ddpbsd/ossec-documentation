@@ -53,7 +53,7 @@ name
    .. XXX Link to manage_agents and authd
 
    An agent name can be specified with `name`.
-   This is the name the agent is given when it is added with `manage_agents </manual/agentmanagement/index.html#manage-agents>`_ or `authd </manual/agentmanagement/index.html#ossec-authd>`_.
+   This is the name the agent is given when it is added with `manage_agents <../manual/agentmanagement/index.html#manage-agents>`_ or `authd <../manual/agentmanagement/index.html#ossec-authd>`_.
 
    .. code-block:: xml
 
