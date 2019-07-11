@@ -171,10 +171,35 @@ This can also be avoided by using bash to run ``install.sh``:
 
    # bash ./install.sh
 
+Alpine Linux
+^^^^^^^^^^^^
+
+To build OSSEC on Alpine Linux the following packages should be installed:
+
+.. code-block:: console
+
+   # apk add libc-dev pcre2-dev bsd-compat-headers libevent-dev openssl-dev zlib-dev linux-headers
+
+Even with the `linux-headers` package installed, make will not be able to find `a.out.h`.
+Until the installer is fixed, link `a.out.h` to `src/headers`:
+
+.. code-block:: console
+
+   $ ln -s /usr/include/linux/a.out.h ./headers/a.out.h
+
+
 OpenBSD
 ^^^^^^^
 
-*TBD*
+To build OSSEC on OpenBSD the following packages should be installed:
+
+.. code-block:: console
+
+   # pkg_add pcre2 gmake
+
+To add database support for a server the *postgresql-client* or *mariadb-client* will need to be installed.
+
+For sqlite support, install the *sqlite3* package.
 
 FreeBSD
 ^^^^^^^
