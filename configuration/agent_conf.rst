@@ -64,7 +64,7 @@ profile
 
    .. XXX link to ossec.conf profile options
 
-   A `config-profile`_ is a group of similar agents that can agent can subscribe to in its `ossec.conf`.
+   A `profile <./ossec_conf.html#config-profile>`_ is a group of similar agents that can agent can subscribe to in its `ossec.conf`.
 
    .. code-block:: xml
 
