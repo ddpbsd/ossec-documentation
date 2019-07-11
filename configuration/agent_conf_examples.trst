@@ -2,7 +2,7 @@
 Examples
 ^^^^^^^^
 
-*Adding a syscheck configuration to Linux agents*
+**Adding a syscheck configuration to Linux agents**
 
    The `directories <./ossec_conf.html#directories>`_ option to monitor `/var/www/html` on Linux agents
    can be added to the `agent.conf`.
