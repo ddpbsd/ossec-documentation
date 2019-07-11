@@ -426,7 +426,7 @@ options
 
       - *Example:* <options>no_email_alert</options>
 
-   .. _options-no_logs
+   .. _options-no_logs:
 
    - *no_log*
 	
