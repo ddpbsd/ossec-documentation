@@ -2,8 +2,8 @@
    **Disable email_notification**
 
 
-.. code-block:: xml
+   .. code-block:: xml
 
-   <email_notification>no</email_notification>
+      <email_notification>no</email_notification>
 
 
