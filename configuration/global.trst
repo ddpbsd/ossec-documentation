@@ -23,6 +23,8 @@ email_to
 
    **Allowed:** Any valid email address.
 
+.. include:: examples/global/email_to.trst
+
 .. _global_email_from:
 
 email_from

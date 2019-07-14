@@ -1,0 +1,10 @@
+
+
+.. _email_to_example:
+
+   **Set an email address**
+
+   .. code-block::xml
+
+      <email_to>security@example.com</email_to>
+
