@@ -1,0 +1,15 @@
+
+.. _examples_allow_list:
+
+   **Allow an IP address**
+
+   .. code-block:: xml
+
+      <allow_list>192.168.1.100</allow_list>
+
+   **Allow an IP block**
+
+   .. code-block:: xml
+
+      <allow_list>10.0.0.0/24</allow_list>
+
