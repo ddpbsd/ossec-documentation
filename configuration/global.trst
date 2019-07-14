@@ -47,6 +47,8 @@ reply_to
 
    **Allowed:** Any valid email address.
 
+.. include:: examples/global/reply_to.trst
+
 .. _global_smtp_server:
 
 smtp_server
@@ -55,6 +57,8 @@ smtp_server
    Hostname or IP address alert emails will be sent to.
 
    **Allowed:** IP address or hostname of an smtp server.
+
+.. include:: examples/global/smtp_server.trst
 
 .. _global_email_maxperhour:
 

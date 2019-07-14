@@ -1,0 +1,9 @@
+
+.. _examples_reply_to:
+
+   **Set an email address**
+
+   .. code-block:: xml
+
+      <reply_to>team@example.com</reply_to>
+
