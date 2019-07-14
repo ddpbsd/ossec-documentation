@@ -12,6 +12,8 @@ email_notification
 
    **Allowed:** yes/no
 
+.. include:: examples/global/email_notification.trst
+
 .. _global_email_to:
 
 email_to
