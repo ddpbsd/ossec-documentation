@@ -1,4 +1,6 @@
 
+.. _email_notification_example:
+
    **Enable email_notification**
 
    .. code-block:: xml
