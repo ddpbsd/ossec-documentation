@@ -1,4 +1,11 @@
 
+   **Enable email_notification**
+
+   .. code-block:: xml
+
+      <email_notification>yes</email_notification>
+
+
    **Disable email_notification**
 
 
