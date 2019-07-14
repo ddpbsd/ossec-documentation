@@ -1,0 +1,10 @@
+
+.. _examples_email_from:
+
+   **Set an email address**
+
+   .. code-block:: xml
+
+      <email_from>ossec@example.com</email_from>
+
+

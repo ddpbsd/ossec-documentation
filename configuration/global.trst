@@ -34,6 +34,8 @@ email_from
 
    **Allowed:** Any valid email address.
 
+.. include:: examples/global/email_from.trst
+
 .. _global_email_reply_to:
 
 reply_to
