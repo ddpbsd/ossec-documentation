@@ -94,5 +94,5 @@ Any `<localfile>` options that require `command` or `full_command` should be con
    list of which options these are. Any help making this list would be appreciated.
 
 
-.. include:: agent_conf_examples.trst
+.. include:: iexamples/agent_conf/agent_conf_examples.trst
 
