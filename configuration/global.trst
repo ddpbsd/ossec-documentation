@@ -107,7 +107,7 @@ custom_alert_output
       Some OSSEC daemons rely on the standard alerts log format to functon properly.
       Using a custom log format may prevent `ossec-maild` or others from working.
 
-... XXX need examples
+.. XXX need examples
 
 .. _global_stats:
 
