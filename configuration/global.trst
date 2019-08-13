@@ -12,6 +12,8 @@ email_notification
 
    **Allowed:** yes/no
 
+.. include:: examples/global/email_notification.trst
+
 .. _global_email_to:
 
 email_to
@@ -21,6 +23,8 @@ email_to
 
    **Allowed:** Any valid email address.
 
+.. include:: examples/global/email_to.trst
+
 .. _global_email_from:
 
 email_from
@@ -29,6 +33,8 @@ email_from
    Email address the alert emails will come from.
 
    **Allowed:** Any valid email address.
+
+.. include:: examples/global/email_from.trst
 
 .. _global_email_reply_to:
 
@@ -41,6 +47,8 @@ reply_to
 
    **Allowed:** Any valid email address.
 
+.. include:: examples/global/reply_to.trst
+
 .. _global_smtp_server:
 
 smtp_server
@@ -49,6 +57,8 @@ smtp_server
    Hostname or IP address alert emails will be sent to.
 
    **Allowed:** IP address or hostname of an smtp server.
+
+.. include:: examples/global/smtp_server.trst
 
 .. _global_email_maxperhour:
 
@@ -66,6 +76,8 @@ email_maxperhour
 
       At the end of the hour any queued emails will be sent together.
       This is true whether email grouping is enabled or disabled.
+
+.. include:: examples/global/email_maxperhour.trst
 
 .. _global_custom_alert_output:
 
@@ -95,6 +107,8 @@ custom_alert_output
       Some OSSEC daemons rely on the standard alerts log format to functon properly.
       Using a custom log format may prevent `ossec-maild` or others from working.
 
+.. XXX need examples
+
 .. _global_stats:
 
 stats
@@ -121,6 +135,8 @@ logall
    **Default:** no
 
    **Allowed:** yes/no
+
+.. include:: examples/global/logall.trst
 
 .. _global_memory_size:
 
@@ -149,6 +165,8 @@ allow_list
    **Allowed:** Any IP address or netblock
 
    **Valid on:*** Server and Local
+
+.. include:: examples/global/allow_list.trst
 
 .. _global_host_information:
 

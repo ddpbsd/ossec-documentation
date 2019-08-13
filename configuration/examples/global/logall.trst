@@ -1,0 +1,9 @@
+
+.. _examples_logall:
+
+   **Turn on the logall option**
+
+   .. code-block:: xml
+
+      <logall>yes</logall>
+

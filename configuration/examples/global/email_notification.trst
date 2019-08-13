@@ -1,0 +1,18 @@
+
+.. _email_notification_example:
+
+   **Enable email_notification**
+
+   .. code-block:: xml
+
+      <email_notification>yes</email_notification>
+
+
+   **Disable email_notification**
+
+
+   .. code-block:: xml
+
+      <email_notification>no</email_notification>
+
+

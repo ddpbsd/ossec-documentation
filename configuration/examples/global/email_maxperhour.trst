@@ -1,0 +1,9 @@
+
+.. _examples_email_maxperhour:
+
+   **Set the maximum numer of emails per hour**
+
+   .. code-block:: xml
+
+      <email_maxperhour>700<email_maxperhour>
+
