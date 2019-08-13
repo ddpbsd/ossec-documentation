@@ -59,6 +59,12 @@ rule
    Used to supercede an OSSEC rule with local changes.
    This is useful to change the level or other options of rules included with OSSEC.
 
+   - *noalert*
+
+   Prevent the rule from triggering an alert.
+   Further rule checks will not happen, except for rules specifically using this rule
+   in an `<if_sid>` configuraiton.
+
 .. _rule_match:
 
 match
