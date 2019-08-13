@@ -29,7 +29,7 @@ Legacy Documentation
    :maxdepth: 2
    :caption: Contents:
 
-   legacy/index
+   legacy/docs/index
 
 Indices and tables
 ==================
