@@ -2,6 +2,11 @@
 Legacy Documentation
 ====================
 
+.. warning::
+
+   This documentation is no longer maintained, and will be removed
+   as the non-legacy documentation is updated.
+
 Manual & FAQ
 ============
 
