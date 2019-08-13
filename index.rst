@@ -22,6 +22,8 @@ Solaris.
    manual/index
    configuration/index
 
+   documentation
+
 Legacy Documentation
 ====================
 
