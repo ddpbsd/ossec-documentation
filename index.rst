@@ -22,6 +22,15 @@ Solaris.
    manual/index
    configuration/index
 
+Legacy Documentation
+====================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   legacy/index
+
 Indices and tables
 ==================
 
