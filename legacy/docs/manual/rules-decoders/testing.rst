@@ -75,12 +75,12 @@ user logoff message from Windows:
     **Alert to be generated.
 
 
-In addition to the information above, :ref:`ossec-logtest -f` can be used 
+In addition to the information above, :ref:`ossec-logtest -v` can be used 
 to follow the log through the rule path:
 
 .. code-block:: console 
 
-    # /var/ossec/bin/ossec-logtest -f
+    # /var/ossec/bin/ossec-logtest -v
     2008/07/04 10:05:43 ossec-testrule: INFO: Started (pid: 23007).
     ossec-testrule: Type one log per line.
 
