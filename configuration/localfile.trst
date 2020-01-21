@@ -104,6 +104,15 @@ log_format
 
          <log_format>multi-line: 3</log_format>
 
+   - multi-line_indented
+
+      This log format accepts logs spanning multiple lines with subsequent lines beginning with
+      either a space or tab.
+
+      .. code-block:: xml
+
+         <log_format>multi-line_indented</log_format>
+
 
 .. _localfile_command:
 
